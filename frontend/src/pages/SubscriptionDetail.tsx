@@ -328,7 +328,7 @@ const SubscriptionDetail = () => {
                           `}
                         >
                           <div className="font-semibold">{plan.name}</div>
-                          <div className="text-sm opacity-90">{formatPrice(plan.monthlyPrice)}/mois</div>
+                          <div className="text-sm opacity-90">{formatPrice(plan.monthlyPrice)}/{language === 'fr' ? 'mois' : 'month'}</div>
                         </button>
                       ))}
                     </div>
