@@ -1,4 +1,5 @@
 import { durationOptions, type DurationOption } from "@/data/subscriptions";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface DurationSelectorProps {
   selected: DurationOption;
@@ -6,6 +7,18 @@ interface DurationSelectorProps {
 }
 
 const DurationSelector = ({ selected, onSelect }: DurationSelectorProps) => {
+  const { language } = useLanguage();
+
+  const getLabel = (option: DurationOption) => {
+    if (language === 'en') {
+      if (option.months === 12) return '1 year';
+      if (option.months === 36) return '3 years';
+      if (option.months === 60) return '5 years';
+      if (option.months === 120) return '10 years';
+    }
+    return option.label;
+  };
+
   return (
     <div className="flex flex-wrap justify-center gap-2">
       {durationOptions.map((option) => {
@@ -23,7 +36,7 @@ const DurationSelector = ({ selected, onSelect }: DurationSelectorProps) => {
               }
             `}
           >
-            {option.label}
+            {getLabel(option)}
           </button>
         );
       })}
