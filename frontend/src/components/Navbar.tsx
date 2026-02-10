@@ -147,6 +147,17 @@ const Navbar = () => {
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
+                  handleDownloadProject();
+                }}
+                disabled={isDownloading}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-foreground font-medium text-sm w-fit disabled:opacity-50"
+              >
+                <Download className={`w-4 h-4 ${isDownloading ? 'animate-bounce' : ''}`} aria-hidden="true" />
+                <span>{isDownloading ? 'Téléchargement...' : 'Télécharger le projet'}</span>
+              </button>
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
                   setIsModalOpen(true);
                 }}
                 className="flex items-center gap-2 px-4 py-2 rounded-xl stat-card-accent text-white font-medium text-sm w-fit"
