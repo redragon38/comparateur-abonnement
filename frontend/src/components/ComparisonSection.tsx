@@ -28,6 +28,7 @@ import { useKeyboardShortcuts } from "@/hooks/useKeyboardShortcuts";
 import { exportToCSV } from "@/lib/exportUtils";
 import { useToast } from "@/hooks/use-toast";
 import { Badge } from "./ui/badge";
+import { useLanguage } from "@/contexts/LanguageContext";
 import {
   Dialog,
   DialogContent,
