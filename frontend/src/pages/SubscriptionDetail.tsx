@@ -417,6 +417,12 @@ const SubscriptionDetail = () => {
         </div>
       </main>
 
+      {/* Abonnements similaires pour le SEO */}
+      <SimilarSubscriptions 
+        currentId={subscription.id} 
+        category={subscription.category} 
+      />
+
       <Footer />
     </div>
   );
