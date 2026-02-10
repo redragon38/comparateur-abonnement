@@ -207,7 +207,7 @@ const SubscriptionDetail = () => {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   aria-labelledby="features-title"
                 >
-                  <h2 id="features-title" className="text-2xl font-bold text-foreground mb-6">Fonctionnalités</h2>
+                  <h2 id="features-title" className="text-2xl font-bold text-foreground mb-6">{language === 'fr' ? 'Fonctionnalités' : 'Features'}</h2>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3" role="list">
                     {enrichedData.features.map((feature, index) => (
                       <motion.li
