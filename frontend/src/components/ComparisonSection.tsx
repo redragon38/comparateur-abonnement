@@ -358,7 +358,7 @@ const ComparisonSection = () => {
                   className="bg-white/20 hover:bg-white/30 text-white"
                   onClick={() => setShowComparison(true)}
                 >
-                  Comparer
+                  {language === 'fr' ? 'Comparer' : 'Compare'}
                 </Button>
               )}
               <Button
@@ -367,7 +367,7 @@ const ComparisonSection = () => {
                 className="text-white hover:bg-white/10"
                 onClick={() => setComparedIds([])}
               >
-                Effacer
+                {language === 'fr' ? 'Effacer' : 'Clear'}
               </Button>
             </div>
           </motion.div>
