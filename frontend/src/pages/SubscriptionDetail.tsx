@@ -17,6 +17,7 @@ const SubscriptionDetail = () => {
   const [selectedPlanIndex, setSelectedPlanIndex] = useState(0);
   const [duration, setDuration] = useState<DurationOption>(durationOptions[2]);
   const { addToHistory } = useHistory();
+  const { language } = useLanguage();
 
   const subscription = subscriptions.find(s => s.id === id);
   const enrichedData = enrichedSubscriptions[id || ""];
