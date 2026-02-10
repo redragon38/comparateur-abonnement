@@ -175,8 +175,8 @@ const ComparisonSection = () => {
   const handleExportCSV = () => {
     if (Object.keys(selectedPlans).length === 0) {
       toast({
-        title: "Aucune sélection",
-        description: "Sélectionnez d'abord des abonnements à exporter",
+        title: language === 'fr' ? "Aucune sélection" : "No selection",
+        description: language === 'fr' ? "Sélectionnez d'abord des abonnements à exporter" : "Select subscriptions to export first",
         variant: "destructive",
         duration: 3000,
       });
@@ -185,8 +185,8 @@ const ComparisonSection = () => {
     
     exportToCSV(selectedPlans, duration);
     toast({
-      title: "Export réussi",
-      description: "Votre sélection a été exportée en CSV",
+      title: language === 'fr' ? "Export réussi" : "Export successful",
+      description: language === 'fr' ? "Votre sélection a été exportée en CSV" : "Your selection has been exported to CSV",
       duration: 3000,
     });
   };
