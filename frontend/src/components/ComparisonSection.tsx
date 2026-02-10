@@ -329,7 +329,9 @@ const ComparisonSection = () => {
             <div className="flex items-center gap-3 flex-wrap">
               <GitCompare className="w-5 h-5 text-white" />
               <span className="text-white font-medium">
-                {comparedIds.length} abonnement{comparedIds.length > 1 ? 's' : ''} sélectionné{comparedIds.length > 1 ? 's' : ''}
+                {comparedIds.length} {language === 'fr' 
+                  ? `abonnement${comparedIds.length > 1 ? 's' : ''} sélectionné${comparedIds.length > 1 ? 's' : ''}`
+                  : `subscription${comparedIds.length > 1 ? 's' : ''} selected`}
               </span>
               <div className="flex gap-2">
                 {comparedIds.map(id => {
