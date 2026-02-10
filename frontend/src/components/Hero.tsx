@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
+  const { t, language } = useLanguage();
 
   useEffect(() => {
     setMounted(true);
@@ -74,7 +76,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse-glow" aria-hidden="true" />
-            <span>Calculateur gratuit · Aucun compte requis</span>
+            <span>{t('hero.badge')}</span>
           </motion.div>
 
           <motion.h1 
@@ -82,20 +84,42 @@ const Hero = () => {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08]"
             variants={itemVariants}
           >
-            Tes abonnements{" "}
-            <br className="hidden sm:block" />
-            te coûtent{" "}
-            <span className="text-gradient-shock">vraiment</span>
-            {" "}combien ?
+            {language === 'fr' ? (
+              <>
+                Tes abonnements{" "}
+                <br className="hidden sm:block" />
+                te coûtent{" "}
+                <span className="text-gradient-shock">vraiment</span>
+                {" "}combien ?
+              </>
+            ) : (
+              <>
+                How much do your{" "}
+                <br className="hidden sm:block" />
+                subscriptions{" "}
+                <span className="text-gradient-shock">really</span>
+                {" "}cost?
+              </>
+            )}
           </motion.h1>
 
           <motion.p 
             className="text-lg md:text-xl text-foreground/50 max-w-2xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            <strong>Netflix</strong>, <strong>Spotify</strong>, <strong>Disney+</strong>… On affiche le{" "}
-            <strong className="text-foreground/80">prix réel</strong> de tes abonnements
-            sur <strong>1, 3, 5 ou 10 ans</strong>. Les résultats vont te surprendre.
+            {language === 'fr' ? (
+              <>
+                <strong>Netflix</strong>, <strong>Spotify</strong>, <strong>Disney+</strong>… On affiche le{" "}
+                <strong className="text-foreground/80">prix réel</strong> de tes abonnements
+                sur <strong>1, 3, 5 ou 10 ans</strong>. Les résultats vont te surprendre.
+              </>
+            ) : (
+              <>
+                <strong>Netflix</strong>, <strong>Spotify</strong>, <strong>Disney+</strong>… We show the{" "}
+                <strong className="text-foreground/80">real price</strong> of your subscriptions
+                over <strong>1, 3, 5 or 10 years</strong>. The results will surprise you.
+              </>
+            )}
           </motion.p>
 
           <motion.div 
@@ -107,9 +131,9 @@ const Hero = () => {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl stat-card-shock text-white font-bold text-lg transition-all glow-shock"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              aria-label="Aller au comparateur pour voir le vrai prix de vos abonnements"
+              aria-label={t('hero.cta')}
             >
-              Voir le vrai prix
+              {t('hero.cta')}
               <motion.span 
                 aria-hidden="true"
                 className="text-xl"
@@ -135,7 +159,7 @@ const Hero = () => {
               role="listitem"
             >
               <span className="text-2xl font-bold text-gradient-shock">20+</span>
-              <span className="text-xs text-foreground/50">services<br />comparés</span>
+              <span className="text-xs text-foreground/50">{t('hero.stat1')}</span>
             </motion.div>
             <motion.div 
               className="glass rounded-xl px-5 py-3 flex items-center gap-2"
@@ -144,7 +168,7 @@ const Hero = () => {
               role="listitem"
             >
               <span className="text-2xl font-bold text-gradient-accent">100%</span>
-              <span className="text-xs text-foreground/50">gratuit<br />sans pub</span>
+              <span className="text-xs text-foreground/50">{t('hero.stat2')}</span>
             </motion.div>
             <motion.div 
               className="glass rounded-xl px-5 py-3 flex items-center gap-2"
@@ -153,7 +177,7 @@ const Hero = () => {
               role="listitem"
             >
               <span className="text-2xl font-bold text-foreground">2025</span>
-              <span className="text-xs text-foreground/50">prix<br />à jour</span>
+              <span className="text-xs text-foreground/50">{t('hero.stat3')}</span>
             </motion.div>
           </motion.div>
         </motion.div>
