@@ -1,11 +1,37 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Plus, Menu, X } from "lucide-react";
+import { Plus, Menu, X, Download } from "lucide-react";
 import ProposeSubscriptionModal from "./ProposeSubscriptionModal";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownloadProject = async () => {
+    setIsDownloading(true);
+    try {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || '';
+      const response = await fetch(`${backendUrl}/api/download-project`);
+      
+      if (!response.ok) throw new Error('Erreur lors du téléchargement');
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'combien-ca-coute-project.zip';
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error('Erreur:', error);
+      alert('Erreur lors du téléchargement du projet');
+    } finally {
+      setIsDownloading(false);
+    }
+  };
 
   return (
     <>
