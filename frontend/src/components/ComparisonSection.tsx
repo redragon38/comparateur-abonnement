@@ -49,6 +49,7 @@ const ComparisonSection = () => {
   const [showComparison, setShowComparison] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [showShortcuts, setShowShortcuts] = useState(false);
+  const { language, t } = useLanguage();
   const [showPriceFilter, setShowPriceFilter] = useState(false);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 100]);
   const [quickViewId, setQuickViewId] = useState<string | null>(null);
