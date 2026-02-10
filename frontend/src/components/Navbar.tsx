@@ -11,8 +11,14 @@ const Navbar = () => {
   const handleDownloadProject = async () => {
     setIsDownloading(true);
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || '';
-      const response = await fetch(`${backendUrl}/api/download-project`);
+      // Utiliser l'URL du backend depuis les variables d'environnement
+      const backendUrl = (import.meta.env.VITE_BACKEND_URL || 
+                          import.meta.env.REACT_APP_BACKEND_URL || 
+                          (window as any).env?.REACT_APP_BACKEND_URL ||
+                          '').replace(/\/$/, '');
+      
+      const apiUrl = backendUrl ? `${backendUrl}/api/download-project` : '/api/download-project';
+      const response = await fetch(apiUrl);
       
       if (!response.ok) throw new Error('Erreur lors du téléchargement');
       
