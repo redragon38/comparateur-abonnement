@@ -362,13 +362,13 @@ const SubscriptionDetail = () => {
                 {/* Price summary */}
                 <div className="space-y-4 pt-4 border-t border-white/10">
                   <div className="flex justify-between items-baseline">
-                    <span className="text-foreground/60">Prix mensuel</span>
+                    <span className="text-foreground/60">{language === 'fr' ? 'Prix mensuel' : 'Monthly price'}</span>
                     <span className="text-xl font-bold text-foreground">
                       {formatPrice(selectedPlan.monthlyPrice)}
                     </span>
                   </div>
                   <div className="flex justify-between items-baseline">
-                    <span className="text-foreground/60">Sur {duration.label}</span>
+                    <span className="text-foreground/60">{language === 'fr' ? 'Sur' : 'Over'} {language === 'en' ? (duration.months === 12 ? '1 year' : duration.months === 36 ? '3 years' : duration.months === 60 ? '5 years' : '10 years') : duration.label}</span>
                     <span className="text-2xl font-bold text-gradient-shock">
                       {formatPrice(totalCost)}
                     </span>
@@ -385,7 +385,7 @@ const SubscriptionDetail = () => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Voir l'offre officielle
+                    {language === 'fr' ? "Voir l'offre officielle" : 'View official offer'}
                   </motion.a>
                 )}
               </motion.div>
@@ -394,7 +394,7 @@ const SubscriptionDetail = () => {
 
           {/* Section des avis */}
           <section className="mt-12" aria-labelledby="reviews-title">
-            <h2 id="reviews-title" className="sr-only">Avis des utilisateurs pour {subscription.name}</h2>
+            <h2 id="reviews-title" className="sr-only">{language === 'fr' ? `Avis des utilisateurs pour ${subscription.name}` : `User reviews for ${subscription.name}`}</h2>
             <AppReviews 
               appId={`subscription-${id}`} 
               appName={subscription.name}
