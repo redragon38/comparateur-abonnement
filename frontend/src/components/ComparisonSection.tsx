@@ -216,10 +216,16 @@ const ComparisonSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 id="comparateur-title" className="text-3xl md:text-5xl font-bold">
-            Compare le <span className="text-gradient-shock">vrai prix</span> de tes abonnements
+            {language === 'fr' ? (
+              <>Compare le <span className="text-gradient-shock">vrai prix</span> de tes abonnements</>
+            ) : (
+              <>Compare the <span className="text-gradient-shock">real price</span> of your subscriptions</>
+            )}
           </h2>
           <p className="text-foreground/50 max-w-xl mx-auto text-lg">
-            Sélectionne une durée pour voir combien Netflix, Spotify, Disney+ te coûtent réellement.
+            {language === 'fr' 
+              ? 'Sélectionne une durée pour voir combien Netflix, Spotify, Disney+ te coûtent réellement.'
+              : 'Select a duration to see how much Netflix, Spotify, Disney+ really cost you.'}
           </p>
         </motion.header>
 
