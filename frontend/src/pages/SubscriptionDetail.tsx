@@ -37,17 +37,19 @@ const SubscriptionDetail = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <SEO 
-          title="Abonnement non trouvé"
-          description="L'abonnement que vous recherchez n'existe pas ou a été supprimé."
+          title={language === 'fr' ? "Abonnement non trouvé" : "Subscription not found"}
+          description={language === 'fr' ? "L'abonnement que vous recherchez n'existe pas ou a été supprimé." : "The subscription you're looking for doesn't exist or has been removed."}
           noindex={true}
         />
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4">Abonnement non trouvé</h1>
+          <h1 className="text-2xl font-bold text-foreground mb-4">
+            {language === 'fr' ? 'Abonnement non trouvé' : 'Subscription not found'}
+          </h1>
           <button
             onClick={() => navigate("/")}
             className="stat-card-shock text-white px-6 py-3 rounded-xl font-semibold"
           >
-            Retour à l'accueil
+            {language === 'fr' ? "Retour à l'accueil" : 'Back to home'}
           </button>
         </div>
       </div>
