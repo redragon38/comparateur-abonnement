@@ -238,7 +238,7 @@ const SubscriptionDetail = () => {
                     <section className="glass-strong rounded-2xl p-6" aria-labelledby="pros-title">
                       <h3 id="pros-title" className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                         <span className="text-2xl" aria-hidden="true">👍</span>
-                        Points forts
+                        {language === 'fr' ? 'Points forts' : 'Pros'}
                       </h3>
                       <ul className="space-y-2" role="list">
                         {enrichedData.pros.map((pro, index) => (
