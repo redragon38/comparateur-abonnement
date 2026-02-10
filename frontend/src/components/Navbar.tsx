@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Plus, Menu, X, Download } from "lucide-react";
+import { Plus, Menu, X } from "lucide-react";
 import ProposeSubscriptionModal from "./ProposeSubscriptionModal";
 import LanguageSelector from "./LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -8,38 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDownloading, setIsDownloading] = useState(false);
   const { t } = useLanguage();
-
-  const handleDownloadProject = async () => {
-    setIsDownloading(true);
-    try {
-      const backendUrl = (import.meta.env.VITE_BACKEND_URL || 
-                          import.meta.env.REACT_APP_BACKEND_URL || 
-                          (window as any).env?.REACT_APP_BACKEND_URL ||
-                          '').replace(/\/$/, '');
-      
-      const apiUrl = backendUrl ? `${backendUrl}/api/download-project` : '/api/download-project';
-      const response = await fetch(apiUrl);
-      
-      if (!response.ok) throw new Error('Erreur lors du téléchargement');
-      
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'combien-ca-coute-COMPLET.zip';
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      document.body.removeChild(a);
-    } catch (error) {
-      console.error('Erreur:', error);
-      alert('Erreur lors du téléchargement du projet');
-    } finally {
-      setIsDownloading(false);
-    }
-  };
 
   return (
     <>
@@ -79,20 +48,6 @@ const Navbar = () => {
             
             {/* Sélecteur de langue */}
             <LanguageSelector />
-            
-            {/* Bouton télécharger le projet */}
-            <motion.button
-              onClick={handleDownloadProject}
-              disabled={isDownloading}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-foreground font-medium text-sm hover:bg-white/10 transition-colors disabled:opacity-50"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              aria-label={t('nav.download')}
-              data-testid="download-project-btn"
-            >
-              <Download className={`w-4 h-4 ${isDownloading ? 'animate-bounce' : ''}`} aria-hidden="true" />
-              <span>{isDownloading ? t('nav.downloading') : t('nav.download')}</span>
-            </motion.button>
             
             {/* Bouton pour proposer un abonnement */}
             <motion.button
@@ -158,17 +113,6 @@ const Navbar = () => {
               >
                 {t('nav.mobileFaq')}
               </a>
-              <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  handleDownloadProject();
-                }}
-                disabled={isDownloading}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-foreground font-medium text-sm w-fit disabled:opacity-50"
-              >
-                <Download className={`w-4 h-4 ${isDownloading ? 'animate-bounce' : ''}`} aria-hidden="true" />
-                <span>{isDownloading ? t('nav.downloading') : t('nav.mobileDownload')}</span>
-              </button>
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
