@@ -126,7 +126,7 @@ const SubscriptionDetail = () => {
             aria-label="Retour à l'accueil"
           >
             <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-            <span className="font-medium">Retour</span>
+            <span className="font-medium">{language === 'fr' ? 'Retour' : 'Back'}</span>
           </motion.button>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
