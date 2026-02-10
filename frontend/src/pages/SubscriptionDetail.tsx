@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppReviews from "@/components/AppReviews";
 import PromoCodes from "@/components/PromoCodes";
+import SimilarSubscriptions from "@/components/SimilarSubscriptions";
 import SEO, { generateProductSchema } from "@/components/SEO";
 import { useHistory } from "@/hooks/useHistory";
 import { useLanguage } from "@/contexts/LanguageContext";
