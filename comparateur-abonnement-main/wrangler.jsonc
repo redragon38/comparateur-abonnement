@@ -1,0 +1,11 @@
+{
+  "name": "comparateur-abonnement",
+  "type": "javascript",
+  "compatibility_date": "2026-02-09",
+  "build": {
+    "command": "cd frontend && npm run build"
+  },
+  "site": {
+    "bucket": "./frontend/dist"
+  }
+}

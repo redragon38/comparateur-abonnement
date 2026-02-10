@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 252 40% 16%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 252 35% 20%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 12 90% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 252 20% 28%;
+    --muted-foreground: 252 15% 65%;
+
+    --accent: 200 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 100%;
+    --input: 252 20% 25%;
+    --ring: 12 90% 58%;
+
+    --radius: 1rem;
+
+    --shock: 12 90% 58%;
+    --shock-foreground: 0 0% 100%;
+
+    --success: 152 60% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --gradient-start: 252 60% 22%;
+    --gradient-mid: 230 55% 30%;
+    --gradient-end: 200 70% 45%;
+
+    --sidebar-background: 252 40% 16%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 12 90% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 252 20% 28%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 100%;
+    --sidebar-ring: 12 90% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground font-body antialiased;
+    background: linear-gradient(
+      160deg,
+      hsl(262, 50%, 18%) 0%,
+      hsl(245, 45%, 25%) 25%,
+      hsl(230, 50%, 32%) 50%,
+      hsl(210, 55%, 38%) 75%,
+      hsl(195, 60%, 42%) 100%
+    );
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient-shock {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(12, 90%, 58%), hsl(35, 95%, 55%));
+  }
+
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(200, 85%, 55%), hsl(260, 70%, 65%));
+  }
+
+  .text-gradient-purple {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(260, 70%, 65%), hsl(280, 75%, 60%));
+  }
+
+  .glass {
+    background: hsl(0 0% 100% / 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(0 0% 100% / 0.12);
+  }
+
+  .glass-strong {
+    background: hsl(0 0% 100% / 0.14);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid hsl(0 0% 100% / 0.18);
+  }
+
+  .glass-card {
+    background: hsl(0 0% 100% / 0.06);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid hsl(0 0% 100% / 0.10);
+  }
+
+  .glow-shock {
+    box-shadow: 0 0 30px -5px hsl(12 90% 58% / 0.5),
+                0 0 60px -10px hsl(12 90% 58% / 0.2);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 30px -5px hsl(200 85% 55% / 0.4),
+                0 0 60px -10px hsl(200 85% 55% / 0.15);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    background: hsl(0 0% 100% / 0.12);
+    box-shadow: 0 25px 50px -12px hsl(0 0% 0% / 0.3),
+                0 0 30px -5px hsl(200 85% 55% / 0.1);
+  }
+
+  .stat-card-shock {
+    background: linear-gradient(135deg, hsl(12, 85%, 55%), hsl(25, 90%, 52%));
+  }
+
+  .stat-card-accent {
+    background: linear-gradient(135deg, hsl(200, 80%, 50%), hsl(220, 70%, 55%));
+  }
+
+  .stat-card-purple {
+    background: linear-gradient(135deg, hsl(260, 65%, 55%), hsl(280, 60%, 50%));
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+}

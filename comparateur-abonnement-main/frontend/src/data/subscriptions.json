@@ -1,0 +1,4669 @@
+{
+  "subscriptions": [
+   {
+
+      "id": "netflix",
+      "name": "Netflix",
+      "logo": "🎬",
+      "color": "hsl(0, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Standard avec pub",
+          "monthlyPrice": 5.99
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 13.49
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 22.99
+        }
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "logo": "🎵",
+      "color": "hsl(141, 73%, 42%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 10.99
+        },
+        {
+          "name": "Duo",
+          "monthlyPrice": 14.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 17.99
+        }
+      ]
+    },
+    {
+      "id": "amazon-prime",
+      "name": "Amazon Prime",
+      "logo": "📦",
+      "color": "hsl(36, 100%, 50%)",
+      "category": "Multi-services",
+      "plans": [
+        {
+          "name": "Mensuel",
+          "monthlyPrice": 6.99
+        },
+        {
+          "name": "Annuel",
+          "monthlyPrice": 5.83
+        }
+      ]
+    },
+    {
+      "id": "disney-plus",
+      "name": "Disney+",
+      "logo": "🏰",
+      "color": "hsl(220, 80%, 55%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Standard avec pub",
+          "monthlyPrice": 5.99
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 8.99
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 11.99
+        }
+      ]
+    },
+    {
+      "id": "xbox-game-pass",
+      "name": "Xbox Game Pass",
+      "logo": "🎮",
+      "color": "hsl(120, 60%, 45%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Core",
+          "monthlyPrice": 6.99
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 12.99
+        },
+        {
+          "name": "Ultimate",
+          "monthlyPrice": 17.99
+        }
+      ]
+    },
+    {
+      "id": "apple-music",
+      "name": "Apple Music",
+      "logo": "🎧",
+      "color": "hsl(340, 80%, 55%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Individuel",
+          "monthlyPrice": 10.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 16.99
+        }
+      ]
+    },
+    {
+      "id": "youtube-premium",
+      "name": "YouTube Premium",
+      "logo": "▶️",
+      "color": "hsl(0, 100%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Individuel",
+          "monthlyPrice": 12.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 23.99
+        }
+      ]
+    },
+    {
+      "id": "canal-plus",
+      "name": "Canal+",
+      "logo": "📺",
+      "color": "hsl(0, 0%, 20%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Canal+ Ciné Séries",
+          "monthlyPrice": 15.99
+        },
+        {
+          "name": "Canal+ Intégrale",
+          "monthlyPrice": 35.99
+        }
+      ]
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
+      "logo": "🍎",
+      "color": "hsl(0, 0%, 30%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Individuel",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "deezer",
+      "name": "Deezer",
+      "logo": "🎶",
+      "color": "hsl(280, 70%, 50%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 10.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 17.99
+        }
+      ]
+    },
+    {
+      "id": "hbo-max",
+      "name": "HBO Max",
+      "logo": "🎭",
+      "color": "hsl(270, 60%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Avec pub",
+          "monthlyPrice": 5.99
+        },
+        {
+          "name": "Sans pub",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "Ultimate",
+          "monthlyPrice": 15.99
+        }
+      ]
+    },
+    {
+      "id": "paramount-plus",
+      "name": "Paramount+",
+      "logo": "⛰️",
+      "color": "hsl(210, 80%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Essential",
+          "monthlyPrice": 5.99
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 11.99
+        }
+      ]
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "logo": "🦚",
+      "color": "hsl(190, 70%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 5.99
+        },
+        {
+          "name": "Premium Plus",
+          "monthlyPrice": 11.99
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "logo": "💚",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Avec pub",
+          "monthlyPrice": 7.99
+        },
+        {
+          "name": "Sans pub",
+          "monthlyPrice": 17.99
+        }
+      ]
+    },
+    {
+      "id": "mubi",
+      "name": "MUBI",
+      "logo": "🎬",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 12.99
+        }
+      ]
+    },
+    {
+      "id": "criterion-channel",
+      "name": "Criterion Channel",
+      "logo": "🎞️",
+      "color": "hsl(0, 0%, 20%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 10.99
+        }
+      ]
+    },
+    {
+      "id": "shudder",
+      "name": "Shudder",
+      "logo": "👻",
+      "color": "hsl(0, 75%, 35%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "acorn-tv",
+      "name": "Acorn TV",
+      "logo": "🌰",
+      "color": "hsl(145, 65%, 40%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 6.99
+        }
+      ]
+    },
+    {
+      "id": "britbox",
+      "name": "BritBox",
+      "logo": "🇬🇧",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "sundance-now",
+      "name": "Sundance Now",
+      "logo": "🎭",
+      "color": "hsl(25, 75%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 6.99
+        }
+      ]
+    },
+    {
+      "id": "amc-plus",
+      "name": "AMC+",
+      "logo": "📺",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 8.99
+        }
+      ]
+    },
+    {
+      "id": "showtime",
+      "name": "Showtime",
+      "logo": "🎬",
+      "color": "hsl(0, 85%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 10.99
+        }
+      ]
+    },
+    {
+      "id": "starz",
+      "name": "Starz",
+      "logo": "⭐",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 8.99
+        }
+      ]
+    },
+    {
+      "id": "mgm-plus",
+      "name": "MGM+",
+      "logo": "🦁",
+      "color": "hsl(45, 85%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "curiositystream",
+      "name": "CuriosityStream",
+      "logo": "🔬",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "HD",
+          "monthlyPrice": 2.99
+        },
+        {
+          "name": "4K",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "nebula",
+      "name": "Nebula",
+      "logo": "🌌",
+      "color": "hsl(270, 65%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 5.0
+        }
+      ]
+    },
+    {
+      "id": "viki",
+      "name": "Viki",
+      "logo": "💜",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "crunchyroll",
+      "name": "Crunchyroll",
+      "logo": "🐉",
+      "color": "hsl(25, 95%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Fan",
+          "monthlyPrice": 7.99
+        },
+        {
+          "name": "Mega Fan",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "Ultimate Fan",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "funimation",
+      "name": "Funimation",
+      "logo": "🎌",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 5.99
+        },
+        {
+          "name": "Premium Plus",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "wakanim",
+      "name": "Wakanim",
+      "logo": "🎌",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "adn",
+      "name": "ADN",
+      "logo": "🌸",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "salto",
+      "name": "Salto",
+      "logo": "📺",
+      "color": "hsl(340, 85%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Découverte",
+          "monthlyPrice": 6.99
+        },
+        {
+          "name": "Tribu",
+          "monthlyPrice": 12.99
+        }
+      ]
+    },
+    {
+      "id": "molotov-plus",
+      "name": "Molotov Plus",
+      "logo": "📺",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 3.99
+        },
+        {
+          "name": "Extended",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "ocs",
+      "name": "OCS",
+      "logo": "🎬",
+      "color": "hsl(25, 85%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 11.99
+        }
+      ]
+    },
+    {
+      "id": "twitch-turbo",
+      "name": "Twitch Turbo",
+      "logo": "🎥",
+      "color": "hsl(265, 75%, 55%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Turbo",
+          "monthlyPrice": 8.99
+        }
+      ]
+    },
+    {
+      "id": "pluto-tv",
+      "name": "Pluto TV",
+      "logo": "📺",
+      "color": "hsl(270, 65%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "tubi",
+      "name": "Tubi",
+      "logo": "📺",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "plex",
+      "name": "Plex Pass",
+      "logo": "▶️",
+      "color": "hsl(35, 85%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "emby",
+      "name": "Emby Premiere",
+      "logo": "🎞️",
+      "color": "hsl(145, 65%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "playstation-plus",
+      "name": "PlayStation Plus",
+      "logo": "🎮",
+      "color": "hsl(220, 85%, 55%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Essential",
+          "monthlyPrice": 8.99
+        },
+        {
+          "name": "Extra",
+          "monthlyPrice": 13.99
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 16.99
+        }
+      ]
+    },
+    {
+      "id": "nintendo-switch-online",
+      "name": "Nintendo Switch Online",
+      "logo": "🕹️",
+      "color": "hsl(0, 85%, 55%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 3.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 7.99
+        },
+        {
+          "name": "Expansion Pack",
+          "monthlyPrice": 10.99
+        }
+      ]
+    },
+    {
+      "id": "ea-play",
+      "name": "EA Play",
+      "logo": "🎯",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "ubisoft-plus",
+      "name": "Ubisoft+",
+      "logo": "🌀",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Classics",
+          "monthlyPrice": 7.99
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 17.99
+        }
+      ]
+    },
+    {
+      "id": "nvidia-geforce-now",
+      "name": "GeForce NOW",
+      "logo": "🎮",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Priority",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "Ultimate",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "shadow",
+      "name": "Shadow",
+      "logo": "☁️",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Power",
+          "monthlyPrice": 29.99
+        },
+        {
+          "name": "Infinite",
+          "monthlyPrice": 44.99
+        }
+      ]
+    },
+    {
+      "id": "luna",
+      "name": "Amazon Luna",
+      "logo": "🌙",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Luna+",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "utomik",
+      "name": "Utomik",
+      "logo": "🎮",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Access",
+          "monthlyPrice": 6.99
+        }
+      ]
+    },
+    {
+      "id": "humble-choice",
+      "name": "Humble Choice",
+      "logo": "🎁",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Choice",
+          "monthlyPrice": 11.99
+        }
+      ]
+    },
+    {
+      "id": "tidal",
+      "name": "Tidal",
+      "logo": "🌊",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "HiFi",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "HiFi Plus",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "qobuz",
+      "name": "Qobuz",
+      "logo": "🎵",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Studio",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "soundcloud-go",
+      "name": "SoundCloud Go+",
+      "logo": "☁️",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Go+",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "pandora",
+      "name": "Pandora",
+      "logo": "💿",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "amazon-music",
+      "name": "Amazon Music Unlimited",
+      "logo": "🎶",
+      "color": "hsl(200, 85%, 50%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 10.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 16.99
+        }
+      ]
+    },
+    {
+      "id": "youtube-music",
+      "name": "YouTube Music",
+      "logo": "🎵",
+      "color": "hsl(0, 100%, 45%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 10.99
+        }
+      ]
+    },
+    {
+      "id": "napster",
+      "name": "Napster",
+      "logo": "🎧",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Musique",
+      "plans": [
+        {
+          "name": "Premier",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-creative-cloud",
+      "name": "Adobe Creative Cloud",
+      "logo": "🎨",
+      "color": "hsl(0, 85%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Photographie",
+          "monthlyPrice": 11.99
+        },
+        {
+          "name": "Toutes apps",
+          "monthlyPrice": 54.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "logo": "🖼️",
+      "color": "hsl(210, 85%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 22.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-premiere",
+      "name": "Adobe Premiere Pro",
+      "logo": "🎬",
+      "color": "hsl(240, 85%, 55%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 22.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-illustrator",
+      "name": "Adobe Illustrator",
+      "logo": "🎨",
+      "color": "hsl(25, 85%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 22.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-indesign",
+      "name": "Adobe InDesign",
+      "logo": "📄",
+      "color": "hsl(340, 85%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 22.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-after-effects",
+      "name": "Adobe After Effects",
+      "logo": "🎬",
+      "color": "hsl(270, 85%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 22.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-lightroom",
+      "name": "Adobe Lightroom",
+      "logo": "📸",
+      "color": "hsl(210, 85%, 55%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "1TB",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-acrobat",
+      "name": "Adobe Acrobat Pro",
+      "logo": "📄",
+      "color": "hsl(0, 85%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "canva-pro",
+      "name": "Canva Pro",
+      "logo": "🎨",
+      "color": "hsl(180, 75%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 12.99
+        },
+        {
+          "name": "Teams",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "logo": "📊",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 6.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "google-one",
+      "name": "Google One",
+      "logo": "☁️",
+      "color": "hsl(220, 75%, 55%)",
+      "category": "Stockage",
+      "plans": [
+        {
+          "name": "100 GB",
+          "monthlyPrice": 1.99
+        },
+        {
+          "name": "200 GB",
+          "monthlyPrice": 2.99
+        },
+        {
+          "name": "2 TB",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "logo": "📦",
+      "color": "hsl(210, 80%, 55%)",
+      "category": "Stockage",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 16.58
+        }
+      ]
+    },
+    {
+      "id": "icloud-plus",
+      "name": "iCloud+",
+      "logo": "☁️",
+      "color": "hsl(210, 70%, 55%)",
+      "category": "Stockage",
+      "plans": [
+        {
+          "name": "50 GB",
+          "monthlyPrice": 0.99
+        },
+        {
+          "name": "200 GB",
+          "monthlyPrice": 2.99
+        },
+        {
+          "name": "2 TB",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "onedrive",
+      "name": "OneDrive",
+      "logo": "☁️",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Stockage",
+      "plans": [
+        {
+          "name": "100 GB",
+          "monthlyPrice": 1.99
+        },
+        {
+          "name": "1 TB",
+          "monthlyPrice": 6.99
+        }
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "logo": "📝",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 10.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 18.0
+        }
+      ]
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "logo": "🐘",
+      "color": "hsl(145, 65%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 10.83
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 14.17
+        }
+      ]
+    },
+    {
+      "id": "todoist",
+      "name": "Todoist",
+      "logo": "✅",
+      "color": "hsl(0, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 4.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 6.0
+        }
+      ]
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "logo": "📋",
+      "color": "hsl(210, 80%, 55%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 5.0
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 10.0
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 17.5
+        }
+      ]
+    },
+    {
+      "id": "asana",
+      "name": "Asana",
+      "logo": "📊",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 10.99
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 24.99
+        }
+      ]
+    },
+    {
+      "id": "monday",
+      "name": "Monday.com",
+      "logo": "📅",
+      "color": "hsl(340, 85%, 55%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 9.0
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 12.0
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 19.0
+        }
+      ]
+    },
+    {
+      "id": "clickup",
+      "name": "ClickUp",
+      "logo": "✅",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Unlimited",
+          "monthlyPrice": 5.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 12.0
+        }
+      ]
+    },
+    {
+      "id": "airtable",
+      "name": "Airtable",
+      "logo": "📊",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 10.0
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 20.0
+        }
+      ]
+    },
+    {
+      "id": "coda",
+      "name": "Coda",
+      "logo": "📝",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 10.0
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 30.0
+        }
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "logo": "🎨",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Professional",
+          "monthlyPrice": 12.0
+        },
+        {
+          "name": "Organization",
+          "monthlyPrice": 45.0
+        }
+      ]
+    },
+    {
+      "id": "sketch",
+      "name": "Sketch",
+      "logo": "💎",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 9.0
+        }
+      ]
+    },
+    {
+      "id": "webflow",
+      "name": "Webflow",
+      "logo": "🌊",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "CMS",
+          "monthlyPrice": 23.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 39.0
+        }
+      ]
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "logo": "✍️",
+      "color": "hsl(145, 65%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 12.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 15.0
+        }
+      ]
+    },
+    {
+      "id": "loom",
+      "name": "Loom",
+      "logo": "🎥",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Business",
+          "monthlyPrice": 12.5
+        }
+      ]
+    },
+    {
+      "id": "descript",
+      "name": "Descript",
+      "logo": "🎙️",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Creator",
+          "monthlyPrice": 12.0
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 24.0
+        }
+      ]
+    },
+    {
+      "id": "otter-ai",
+      "name": "Otter.ai",
+      "logo": "🦦",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 16.99
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 30.0
+        }
+      ]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "logo": "💬",
+      "color": "hsl(280, 65%, 50%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 7.25
+        },
+        {
+          "name": "Business+",
+          "monthlyPrice": 12.5
+        }
+      ]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "logo": "📹",
+      "color": "hsl(210, 85%, 55%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 15.99
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "discord-nitro",
+      "name": "Discord Nitro",
+      "logo": "🎮",
+      "color": "hsl(235, 75%, 60%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Nitro Basic",
+          "monthlyPrice": 2.99
+        },
+        {
+          "name": "Nitro",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "telegram-premium",
+      "name": "Telegram Premium",
+      "logo": "✈️",
+      "color": "hsl(210, 75%, 55%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "logo": "👥",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Essentials",
+          "monthlyPrice": 4.0
+        },
+        {
+          "name": "Business Basic",
+          "monthlyPrice": 6.0
+        }
+      ]
+    },
+    {
+      "id": "google-workspace",
+      "name": "Google Workspace",
+      "logo": "📧",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Business Starter",
+          "monthlyPrice": 6.0
+        },
+        {
+          "name": "Business Standard",
+          "monthlyPrice": 12.0
+        },
+        {
+          "name": "Business Plus",
+          "monthlyPrice": 18.0
+        }
+      ]
+    },
+    {
+      "id": "webex",
+      "name": "Webex",
+      "logo": "📹",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 13.5
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 17.95
+        }
+      ]
+    },
+    {
+      "id": "gotomeeting",
+      "name": "GoToMeeting",
+      "logo": "📹",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Professional",
+          "monthlyPrice": 12.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 16.0
+        }
+      ]
+    },
+    {
+      "id": "masterclass",
+      "name": "MasterClass",
+      "logo": "🎓",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 10.0
+        },
+        {
+          "name": "Duo",
+          "monthlyPrice": 15.0
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 20.0
+        }
+      ]
+    },
+    {
+      "id": "skillshare",
+      "name": "Skillshare",
+      "logo": "🎨",
+      "color": "hsl(175, 70%, 45%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 13.99
+        }
+      ]
+    },
+    {
+      "id": "coursera-plus",
+      "name": "Coursera Plus",
+      "logo": "🎓",
+      "color": "hsl(210, 85%, 55%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Annual",
+          "monthlyPrice": 49.0
+        }
+      ]
+    },
+    {
+      "id": "linkedin-learning",
+      "name": "LinkedIn Learning",
+      "logo": "📖",
+      "color": "hsl(205, 75%, 45%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 39.99
+        }
+      ]
+    },
+    {
+      "id": "duolingo-plus",
+      "name": "Duolingo Plus",
+      "logo": "🦉",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Super",
+          "monthlyPrice": 6.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "babbel",
+      "name": "Babbel",
+      "logo": "🗣️",
+      "color": "hsl(0, 75%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "1 Langue",
+          "monthlyPrice": 13.95
+        },
+        {
+          "name": "Toutes langues",
+          "monthlyPrice": 16.95
+        }
+      ]
+    },
+    {
+      "id": "rosetta-stone",
+      "name": "Rosetta Stone",
+      "logo": "🌐",
+      "color": "hsl(45, 85%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Unlimited",
+          "monthlyPrice": 11.99
+        }
+      ]
+    },
+    {
+      "id": "brilliant",
+      "name": "Brilliant",
+      "logo": "💡",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 12.99
+        }
+      ]
+    },
+    {
+      "id": "datacamp",
+      "name": "DataCamp",
+      "logo": "📊",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 25.0
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 39.0
+        }
+      ]
+    },
+    {
+      "id": "pluralsight",
+      "name": "Pluralsight",
+      "logo": "💻",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 29.0
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 45.0
+        }
+      ]
+    },
+    {
+      "id": "codecademy",
+      "name": "Codecademy",
+      "logo": "💻",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "treehouse",
+      "name": "Treehouse",
+      "logo": "🏠",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 25.0
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 49.0
+        }
+      ]
+    },
+    {
+      "id": "audible",
+      "name": "Audible",
+      "logo": "📚",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Livres audio",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 7.95
+        },
+        {
+          "name": "Premium Plus",
+          "monthlyPrice": 14.95
+        }
+      ]
+    },
+    {
+      "id": "kindle-unlimited",
+      "name": "Kindle Unlimited",
+      "logo": "📖",
+      "color": "hsl(35, 75%, 45%)",
+      "category": "Livres",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "scribd",
+      "name": "Scribd",
+      "logo": "📄",
+      "color": "hsl(200, 70%, 50%)",
+      "category": "Livres",
+      "plans": [
+        {
+          "name": "Unlimited",
+          "monthlyPrice": 11.99
+        }
+      ]
+    },
+    {
+      "id": "blinkist",
+      "name": "Blinkist",
+      "logo": "📚",
+      "color": "hsl(95, 75%, 45%)",
+      "category": "Livres",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 12.99
+        }
+      ]
+    },
+    {
+      "id": "kobo-plus",
+      "name": "Kobo Plus",
+      "logo": "📚",
+      "color": "hsl(190, 75%, 45%)",
+      "category": "Livres",
+      "plans": [
+        {
+          "name": "Read",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "Listen",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "everand",
+      "name": "Everand",
+      "logo": "📖",
+      "color": "hsl(210, 70%, 50%)",
+      "category": "Livres",
+      "plans": [
+        {
+          "name": "Unlimited",
+          "monthlyPrice": 11.99
+        }
+      ]
+    },
+    {
+      "id": "storytel",
+      "name": "Storytel",
+      "logo": "📚",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Livres audio",
+      "plans": [
+        {
+          "name": "Unlimited",
+          "monthlyPrice": 12.99
+        }
+      ]
+    },
+    {
+      "id": "libro-fm",
+      "name": "Libro.fm",
+      "logo": "🎧",
+      "color": "hsl(25, 75%, 45%)",
+      "category": "Livres audio",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "headspace",
+      "name": "Headspace",
+      "logo": "🧘",
+      "color": "hsl(25, 85%, 55%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 12.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "calm",
+      "name": "Calm",
+      "logo": "🌊",
+      "color": "hsl(210, 65%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "betterhelp",
+      "name": "BetterHelp",
+      "logo": "💚",
+      "color": "hsl(175, 65%, 45%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Weekly",
+          "monthlyPrice": 65.0
+        }
+      ]
+    },
+    {
+      "id": "talkspace",
+      "name": "Talkspace",
+      "logo": "💬",
+      "color": "hsl(145, 70%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Messaging",
+          "monthlyPrice": 69.0
+        },
+        {
+          "name": "Live",
+          "monthlyPrice": 99.0
+        }
+      ]
+    },
+    {
+      "id": "noom",
+      "name": "Noom",
+      "logo": "⚖️",
+      "color": "hsl(35, 85%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 59.0
+        }
+      ]
+    },
+    {
+      "id": "myfitnesspal",
+      "name": "MyFitnessPal",
+      "logo": "💪",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "peloton",
+      "name": "Peloton",
+      "logo": "🚴",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "App",
+          "monthlyPrice": 12.99
+        },
+        {
+          "name": "All-Access",
+          "monthlyPrice": 44.0
+        }
+      ]
+    },
+    {
+      "id": "strava",
+      "name": "Strava",
+      "logo": "🏃",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Summit",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "apple-fitness",
+      "name": "Apple Fitness+",
+      "logo": "🏋️",
+      "color": "hsl(0, 0%, 20%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "flo",
+      "name": "Flo",
+      "logo": "🌸",
+      "color": "hsl(340, 75%, 55%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "yazio",
+      "name": "YAZIO",
+      "logo": "🥗",
+      "color": "hsl(95, 65%, 45%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "PRO",
+          "monthlyPrice": 6.99
+        }
+      ]
+    },
+    {
+      "id": "ww",
+      "name": "WW (Weight Watchers)",
+      "logo": "⚖️",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Digital",
+          "monthlyPrice": 22.95
+        },
+        {
+          "name": "Digital 360",
+          "monthlyPrice": 32.95
+        }
+      ]
+    },
+    {
+      "id": "dazn",
+      "name": "DAZN",
+      "logo": "🥊",
+      "color": "hsl(45, 100%, 50%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 19.99
+        },
+        {
+          "name": "Annual",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "espn-plus",
+      "name": "ESPN+",
+      "logo": "🏈",
+      "color": "hsl(0, 85%, 45%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 10.99
+        }
+      ]
+    },
+    {
+      "id": "eurosport",
+      "name": "Eurosport",
+      "logo": "🎾",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "Player",
+          "monthlyPrice": 6.99
+        }
+      ]
+    },
+    {
+      "id": "beinsports",
+      "name": "beIN SPORTS",
+      "logo": "⚽",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "Connect",
+          "monthlyPrice": 15.0
+        }
+      ]
+    },
+    {
+      "id": "nba-league-pass",
+      "name": "NBA League Pass",
+      "logo": "🏀",
+      "color": "hsl(220, 85%, 50%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "Team",
+          "monthlyPrice": 13.99
+        },
+        {
+          "name": "All Teams",
+          "monthlyPrice": 24.99
+        }
+      ]
+    },
+    {
+      "id": "mlb-tv",
+      "name": "MLB.TV",
+      "logo": "⚾",
+      "color": "hsl(220, 75%, 45%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "Single Team",
+          "monthlyPrice": 24.99
+        }
+      ]
+    },
+    {
+      "id": "nfl-plus",
+      "name": "NFL+",
+      "logo": "🏈",
+      "color": "hsl(220, 80%, 50%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "NFL+",
+          "monthlyPrice": 6.99
+        },
+        {
+          "name": "NFL+ Premium",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "f1-tv",
+      "name": "F1 TV",
+      "logo": "🏎️",
+      "color": "hsl(0, 85%, 50%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "Access",
+          "monthlyPrice": 2.99
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "motogp",
+      "name": "MotoGP VideoPass",
+      "logo": "🏍️",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Sport",
+      "plans": [
+        {
+          "name": "VideoPass",
+          "monthlyPrice": 29.99
+        }
+      ]
+    },
+    {
+      "id": "the-new-york-times",
+      "name": "The New York Times",
+      "logo": "📰",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 4.0
+        },
+        {
+          "name": "All Access",
+          "monthlyPrice": 17.0
+        }
+      ]
+    },
+    {
+      "id": "washington-post",
+      "name": "The Washington Post",
+      "logo": "📰",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Digital",
+          "monthlyPrice": 10.0
+        }
+      ]
+    },
+    {
+      "id": "wall-street-journal",
+      "name": "The Wall Street Journal",
+      "logo": "📈",
+      "color": "hsl(0, 0%, 20%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Digital",
+          "monthlyPrice": 38.99
+        }
+      ]
+    },
+    {
+      "id": "the-economist",
+      "name": "The Economist",
+      "logo": "📊",
+      "color": "hsl(0, 85%, 45%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Digital",
+          "monthlyPrice": 12.0
+        }
+      ]
+    },
+    {
+      "id": "bloomberg",
+      "name": "Bloomberg",
+      "logo": "📈",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Digital",
+          "monthlyPrice": 39.99
+        }
+      ]
+    },
+    {
+      "id": "le-monde",
+      "name": "Le Monde",
+      "logo": "📰",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Numérique",
+          "monthlyPrice": 15.0
+        }
+      ]
+    },
+    {
+      "id": "le-figaro",
+      "name": "Le Figaro",
+      "logo": "📰",
+      "color": "hsl(220, 65%, 45%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "mediapart",
+      "name": "Mediapart",
+      "logo": "📰",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 11.0
+        }
+      ]
+    },
+    {
+      "id": "apple-news",
+      "name": "Apple News+",
+      "logo": "📰",
+      "color": "hsl(0, 85%, 50%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "readly",
+      "name": "Readly",
+      "logo": "📚",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Actualités",
+      "plans": [
+        {
+          "name": "Unlimited",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "logo": "📧",
+      "color": "hsl(45, 85%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Essentials",
+          "monthlyPrice": 13.0
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 20.0
+        }
+      ]
+    },
+    {
+      "id": "sendinblue",
+      "name": "Brevo",
+      "logo": "📨",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 25.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 65.0
+        }
+      ]
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "logo": "🚀",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 45.0
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 800.0
+        }
+      ]
+    },
+    {
+      "id": "semrush",
+      "name": "SEMrush",
+      "logo": "📊",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 119.95
+        },
+        {
+          "name": "Guru",
+          "monthlyPrice": 229.95
+        }
+      ]
+    },
+    {
+      "id": "ahrefs",
+      "name": "Ahrefs",
+      "logo": "🔍",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Lite",
+          "monthlyPrice": 99.0
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 199.0
+        }
+      ]
+    },
+    {
+      "id": "hootsuite",
+      "name": "Hootsuite",
+      "logo": "🦉",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Professional",
+          "monthlyPrice": 49.0
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 129.0
+        }
+      ]
+    },
+    {
+      "id": "buffer",
+      "name": "Buffer",
+      "logo": "📱",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Essentials",
+          "monthlyPrice": 6.0
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 12.0
+        }
+      ]
+    },
+    {
+      "id": "canva-teams",
+      "name": "Canva for Teams",
+      "logo": "🎨",
+      "color": "hsl(180, 75%, 45%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Teams",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "logo": "🛍️",
+      "color": "hsl(145, 75%, 40%)",
+      "category": "E-commerce",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 29.0
+        },
+        {
+          "name": "Shopify",
+          "monthlyPrice": 79.0
+        },
+        {
+          "name": "Advanced",
+          "monthlyPrice": 299.0
+        }
+      ]
+    },
+    {
+      "id": "bigcommerce",
+      "name": "BigCommerce",
+      "logo": "🛒",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "E-commerce",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 29.95
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 79.95
+        }
+      ]
+    },
+    {
+      "id": "wix-ecommerce",
+      "name": "Wix eCommerce",
+      "logo": "🛒",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "E-commerce",
+      "plans": [
+        {
+          "name": "Business Basic",
+          "monthlyPrice": 27.0
+        },
+        {
+          "name": "Business Unlimited",
+          "monthlyPrice": 32.0
+        }
+      ]
+    },
+    {
+      "id": "linkedin-premium",
+      "name": "LinkedIn Premium",
+      "logo": "💼",
+      "color": "hsl(205, 75%, 45%)",
+      "category": "Professionnel",
+      "plans": [
+        {
+          "name": "Career",
+          "monthlyPrice": 29.99
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 59.99
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub Pro",
+      "logo": "🐙",
+      "color": "hsl(0, 0%, 20%)",
+      "category": "Développement",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 4.0
+        },
+        {
+          "name": "Team",
+          "monthlyPrice": 4.0
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 21.0
+        }
+      ]
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "logo": "🦊",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Développement",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 19.0
+        },
+        {
+          "name": "Ultimate",
+          "monthlyPrice": 99.0
+        }
+      ]
+    },
+    {
+      "id": "pocketcasts",
+      "name": "Pocket Casts",
+      "logo": "🎙️",
+      "color": "hsl(0, 85%, 50%)",
+      "category": "Podcasts",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 0.99
+        }
+      ]
+    },
+    {
+      "id": "wondery-plus",
+      "name": "Wondery+",
+      "logo": "🎙️",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Podcasts",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "luminary",
+      "name": "Luminary",
+      "logo": "💡",
+      "color": "hsl(45, 85%, 50%)",
+      "category": "Podcasts",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "apple-one",
+      "name": "Apple One",
+      "logo": "🍏",
+      "color": "hsl(205, 65%, 50%)",
+      "category": "Multi-services",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 16.95
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 22.95
+        },
+        {
+          "name": "Premier",
+          "monthlyPrice": 32.95
+        }
+      ]
+    },
+    {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "logo": "🔒",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 11.99
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 13.99
+        }
+      ]
+    },
+    {
+      "id": "expressvpn",
+      "name": "ExpressVPN",
+      "logo": "🛡️",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 12.95
+        }
+      ]
+    },
+    {
+      "id": "surfshark",
+      "name": "Surfshark",
+      "logo": "🦈",
+      "color": "hsl(175, 75%, 45%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Surfshark One",
+          "monthlyPrice": 12.95
+        }
+      ]
+    },
+    {
+      "id": "cyberghost",
+      "name": "CyberGhost",
+      "logo": "👻",
+      "color": "hsl(45, 85%, 50%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 12.99
+        }
+      ]
+    },
+    {
+      "id": "protonvpn",
+      "name": "ProtonVPN",
+      "logo": "🔐",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "private-internet-access",
+      "name": "Private Internet Access",
+      "logo": "🔒",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 11.95
+        }
+      ]
+    },
+    {
+      "id": "1password",
+      "name": "1Password",
+      "logo": "🔑",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 2.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "lastpass",
+      "name": "LastPass",
+      "logo": "🔐",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 3.0
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 4.0
+        }
+      ]
+    },
+    {
+      "id": "dashlane",
+      "name": "Dashlane",
+      "logo": "🔒",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 7.49
+        }
+      ]
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden",
+      "logo": "🔑",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 0.83
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 3.33
+        }
+      ]
+    },
+    {
+      "id": "nordpass",
+      "name": "NordPass",
+      "logo": "🔐",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Family",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "logo": "⚡",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 19.99
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 49.0
+        }
+      ]
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "logo": "🔄",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Core",
+          "monthlyPrice": 9.0
+        },
+        {
+          "name": "Pro",
+          "monthlyPrice": 16.0
+        }
+      ]
+    },
+    {
+      "id": "ifttt",
+      "name": "IFTTT",
+      "logo": "🔗",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 2.5
+        },
+        {
+          "name": "Pro+",
+          "monthlyPrice": 5.0
+        }
+      ]
+    },
+    {
+      "id": "tinder-plus",
+      "name": "Tinder Plus",
+      "logo": "🔥",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Rencontres",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "Gold",
+          "monthlyPrice": 14.99
+        },
+        {
+          "name": "Platinum",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "bumble",
+      "name": "Bumble Premium",
+      "logo": "🐝",
+      "color": "hsl(45, 85%, 50%)",
+      "category": "Rencontres",
+      "plans": [
+        {
+          "name": "Boost",
+          "monthlyPrice": 14.99
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 24.99
+        }
+      ]
+    },
+    {
+      "id": "match",
+      "name": "Match",
+      "logo": "❤️",
+      "color": "hsl(0, 75%, 50%)",
+      "category": "Rencontres",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 20.99
+        }
+      ]
+    },
+    {
+      "id": "eharmony",
+      "name": "eHarmony",
+      "logo": "💕",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Rencontres",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 35.99
+        }
+      ]
+    },
+    {
+      "id": "hinge",
+      "name": "Hinge+",
+      "logo": "💛",
+      "color": "hsl(340, 85%, 55%)",
+      "category": "Rencontres",
+      "plans": [
+        {
+          "name": "Preferred",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "protonmail",
+      "name": "ProtonMail",
+      "logo": "📧",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Email",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "hey",
+      "name": "HEY",
+      "logo": "📬",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Email",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 9.0
+        },
+        {
+          "name": "Work",
+          "monthlyPrice": 12.0
+        }
+      ]
+    },
+    {
+      "id": "fastmail",
+      "name": "Fastmail",
+      "logo": "📨",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Email",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 5.0
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 9.0
+        }
+      ]
+    },
+    {
+      "id": "ynab",
+      "name": "YNAB",
+      "logo": "💰",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Finance",
+      "plans": [
+        {
+          "name": "Annual",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "quickbooks",
+      "name": "QuickBooks",
+      "logo": "📊",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Finance",
+      "plans": [
+        {
+          "name": "Simple Start",
+          "monthlyPrice": 30.0
+        },
+        {
+          "name": "Essentials",
+          "monthlyPrice": 55.0
+        }
+      ]
+    },
+    {
+      "id": "freshbooks",
+      "name": "FreshBooks",
+      "logo": "💼",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Finance",
+      "plans": [
+        {
+          "name": "Lite",
+          "monthlyPrice": 17.0
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 30.0
+        }
+      ]
+    },
+    {
+      "id": "mint-premium",
+      "name": "Mint Premium",
+      "logo": "🌱",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Finance",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "adobe-stock",
+      "name": "Adobe Stock",
+      "logo": "📷",
+      "color": "hsl(0, 85%, 45%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "10 images",
+          "monthlyPrice": 29.99
+        },
+        {
+          "name": "40 images",
+          "monthlyPrice": 89.99
+        }
+      ]
+    },
+    {
+      "id": "shutterstock",
+      "name": "Shutterstock",
+      "logo": "📸",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "10 images",
+          "monthlyPrice": 29.0
+        },
+        {
+          "name": "50 images",
+          "monthlyPrice": 99.0
+        }
+      ]
+    },
+    {
+      "id": "getty-images",
+      "name": "Getty Images",
+      "logo": "🖼️",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 125.0
+        }
+      ]
+    },
+    {
+      "id": "envato-elements",
+      "name": "Envato Elements",
+      "logo": "🎨",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 16.5
+        }
+      ]
+    },
+    {
+      "id": "ring-protect",
+      "name": "Ring Protect",
+      "logo": "🔔",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Maison connectée",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 3.99
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 10.0
+        }
+      ]
+    },
+    {
+      "id": "nest-aware",
+      "name": "Nest Aware",
+      "logo": "🏠",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Maison connectée",
+      "plans": [
+        {
+          "name": "Aware",
+          "monthlyPrice": 6.0
+        },
+        {
+          "name": "Aware Plus",
+          "monthlyPrice": 12.0
+        }
+      ]
+    },
+    {
+      "id": "arlo-secure",
+      "name": "Arlo Secure",
+      "logo": "📹",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Maison connectée",
+      "plans": [
+        {
+          "name": "Secure",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Secure Plus",
+          "monthlyPrice": 12.99
+        }
+      ]
+    },
+    {
+      "id": "indeed-resume",
+      "name": "Indeed Resume",
+      "logo": "💼",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Carrière",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 49.99
+        }
+      ]
+    },
+    {
+      "id": "ziprecruiter",
+      "name": "ZipRecruiter",
+      "logo": "💼",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Carrière",
+      "plans": [
+        {
+          "name": "Job Seeker",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "ancestry",
+      "name": "Ancestry",
+      "logo": "🌳",
+      "color": "hsl(145, 65%, 40%)",
+      "category": "Généalogie",
+      "plans": [
+        {
+          "name": "US Discovery",
+          "monthlyPrice": 24.99
+        },
+        {
+          "name": "World Explorer",
+          "monthlyPrice": 39.99
+        }
+      ]
+    },
+    {
+      "id": "23andme",
+      "name": "23andMe",
+      "logo": "🧬",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Généalogie",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.0
+        }
+      ]
+    },
+    {
+      "id": "norton-360",
+      "name": "Norton 360",
+      "logo": "🛡️",
+      "color": "hsl(45, 85%, 50%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Deluxe",
+          "monthlyPrice": 7.49
+        }
+      ]
+    },
+    {
+      "id": "mcafee",
+      "name": "McAfee",
+      "logo": "🔒",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Total Protection",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "bitdefender",
+      "name": "Bitdefender",
+      "logo": "🛡️",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Sécurité",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 7.49
+        }
+      ]
+    },
+    {
+      "id": "abc-mouse",
+      "name": "ABCmouse",
+      "logo": "🎓",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Enfants",
+      "plans": [
+        {
+          "name": "Annual",
+          "monthlyPrice": 12.99
+        }
+      ]
+    },
+    {
+      "id": "epic",
+      "name": "Epic!",
+      "logo": "📚",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Enfants",
+      "plans": [
+        {
+          "name": "Family",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "homer",
+      "name": "Homer",
+      "logo": "🌈",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Enfants",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "khan-academy-kids",
+      "name": "Khan Academy Kids",
+      "logo": "🌟",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Enfants",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "noggin",
+      "name": "Noggin",
+      "logo": "👾",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Enfants",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "gog-galaxy",
+      "name": "GOG Galaxy",
+      "logo": "🎮",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "origin-access",
+      "name": "Origin Access",
+      "logo": "🎯",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Premier",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "apple-arcade",
+      "name": "Apple Arcade",
+      "logo": "🕹️",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "google-play-pass",
+      "name": "Google Play Pass",
+      "logo": "🎮",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Jeux vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "logo": "🎬",
+      "color": "hsl(270, 60%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "With Ads",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "Ad-Free",
+          "monthlyPrice": 15.99
+        },
+        {
+          "name": "Ultimate",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "discovery-plus",
+      "name": "Discovery+",
+      "logo": "🔍",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Ad-Lite",
+          "monthlyPrice": 4.99
+        },
+        {
+          "name": "Ad-Free",
+          "monthlyPrice": 8.99
+        }
+      ]
+    },
+    {
+      "id": "hallmark-movies-now",
+      "name": "Hallmark Movies Now",
+      "logo": "💝",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "history-vault",
+      "name": "History Vault",
+      "logo": "📜",
+      "color": "hsl(25, 75%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "lifetime-movie-club",
+      "name": "Lifetime Movie Club",
+      "logo": "🎭",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 3.99
+        }
+      ]
+    },
+    {
+      "id": "reelz-now",
+      "name": "REELZ NOW",
+      "logo": "🎬",
+      "color": "hsl(0, 0%, 20%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "fandor",
+      "name": "Fandor",
+      "logo": "🎞️",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "filmstruck",
+      "name": "FilmStruck",
+      "logo": "🎬",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 10.99
+        }
+      ]
+    },
+    {
+      "id": "tribeca-shortlist",
+      "name": "Tribeca Shortlist",
+      "logo": "🎭",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "filmbox-plus",
+      "name": "FilmBox+",
+      "logo": "📺",
+      "color": "hsl(0, 85%, 45%)",
+      "category": "Streaming vidéo",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 2.99
+        }
+      ]
+    },
+    {
+      "id": "basecamp",
+      "name": "Basecamp",
+      "logo": "⛺",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pro Unlimited",
+          "monthlyPrice": 299.0
+        }
+      ]
+    },
+    {
+      "id": "wrike",
+      "name": "Wrike",
+      "logo": "📊",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Professional",
+          "monthlyPrice": 9.8
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 24.8
+        }
+      ]
+    },
+    {
+      "id": "smartsheet",
+      "name": "Smartsheet",
+      "logo": "📈",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 7.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 25.0
+        }
+      ]
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "logo": "📋",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 7.75
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 15.25
+        }
+      ]
+    },
+    {
+      "id": "confluence",
+      "name": "Confluence",
+      "logo": "📚",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 5.75
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 11.0
+        }
+      ]
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "logo": "📐",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 8.0
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 14.0
+        }
+      ]
+    },
+    {
+      "id": "height",
+      "name": "Height",
+      "logo": "📏",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Team",
+          "monthlyPrice": 6.99
+        }
+      ]
+    },
+    {
+      "id": "shortcut",
+      "name": "Shortcut",
+      "logo": "🎯",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Team",
+          "monthlyPrice": 8.5
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 12.0
+        }
+      ]
+    },
+    {
+      "id": "teamwork",
+      "name": "Teamwork",
+      "logo": "👥",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Deliver",
+          "monthlyPrice": 10.0
+        },
+        {
+          "name": "Grow",
+          "monthlyPrice": 18.0
+        }
+      ]
+    },
+    {
+      "id": "affinity-designer",
+      "name": "Affinity Designer",
+      "logo": "🎨",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "One-time",
+          "monthlyPrice": 54.99
+        }
+      ]
+    },
+    {
+      "id": "affinity-photo",
+      "name": "Affinity Photo",
+      "logo": "📷",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "One-time",
+          "monthlyPrice": 54.99
+        }
+      ]
+    },
+    {
+      "id": "affinity-publisher",
+      "name": "Affinity Publisher",
+      "logo": "📄",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "One-time",
+          "monthlyPrice": 54.99
+        }
+      ]
+    },
+    {
+      "id": "procreate",
+      "name": "Procreate",
+      "logo": "🎨",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "One-time",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "framer",
+      "name": "Framer",
+      "logo": "🎨",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 20.0
+        }
+      ]
+    },
+    {
+      "id": "marvel",
+      "name": "Marvel",
+      "logo": "⚡",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 12.0
+        }
+      ]
+    },
+    {
+      "id": "invision",
+      "name": "InVision",
+      "logo": "🎨",
+      "color": "hsl(340, 85%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 7.95
+        }
+      ]
+    },
+    {
+      "id": "ringcentral",
+      "name": "RingCentral",
+      "logo": "☎️",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Essentials",
+          "monthlyPrice": 19.99
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 27.99
+        }
+      ]
+    },
+    {
+      "id": "8x8",
+      "name": "8x8",
+      "logo": "📞",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "X2",
+          "monthlyPrice": 24.0
+        },
+        {
+          "name": "X4",
+          "monthlyPrice": 44.0
+        }
+      ]
+    },
+    {
+      "id": "vonage",
+      "name": "Vonage",
+      "logo": "📱",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Communication",
+      "plans": [
+        {
+          "name": "Mobile",
+          "monthlyPrice": 19.99
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 29.99
+        }
+      ]
+    },
+    {
+      "id": "udacity",
+      "name": "Udacity",
+      "logo": "🎓",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Nanodegree",
+          "monthlyPrice": 399.0
+        }
+      ]
+    },
+    {
+      "id": "edx",
+      "name": "edX",
+      "logo": "📚",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Verified Certificate",
+          "monthlyPrice": 49.0
+        }
+      ]
+    },
+    {
+      "id": "khan-academy",
+      "name": "Khan Academy",
+      "logo": "🌟",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "memrise",
+      "name": "Memrise",
+      "logo": "🧠",
+      "color": "hsl(45, 85%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 8.99
+        }
+      ]
+    },
+    {
+      "id": "busuu",
+      "name": "Busuu",
+      "logo": "🗣️",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Éducation",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        },
+        {
+          "name": "Premium Plus",
+          "monthlyPrice": 13.99
+        }
+      ]
+    },
+    {
+      "id": "wave",
+      "name": "Wave",
+      "logo": "🌊",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Finance",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "xero",
+      "name": "Xero",
+      "logo": "💼",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Finance",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 13.0
+        },
+        {
+          "name": "Standard",
+          "monthlyPrice": 37.0
+        }
+      ]
+    },
+    {
+      "id": "personal-capital",
+      "name": "Personal Capital",
+      "logo": "💰",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Finance",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "pocketguard",
+      "name": "PocketGuard",
+      "logo": "💳",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Finance",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 7.99
+        }
+      ]
+    },
+    {
+      "id": "whoop",
+      "name": "WHOOP",
+      "logo": "⌚",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 30.0
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "name": "Future",
+      "logo": "🏋️",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 149.0
+        }
+      ]
+    },
+    {
+      "id": "classpass",
+      "name": "ClassPass",
+      "logo": "🧘",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Base",
+          "monthlyPrice": 15.0
+        },
+        {
+          "name": "Core",
+          "monthlyPrice": 49.0
+        }
+      ]
+    },
+    {
+      "id": "aaptiv",
+      "name": "Aaptiv",
+      "logo": "🎧",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 14.99
+        }
+      ]
+    },
+    {
+      "id": "sweat",
+      "name": "Sweat",
+      "logo": "💪",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 19.99
+        }
+      ]
+    },
+    {
+      "id": "fitbit-premium",
+      "name": "Fitbit Premium",
+      "logo": "⌚",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Bien-être",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "twitter-blue",
+      "name": "X Premium",
+      "logo": "✖️",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Réseaux sociaux",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 8.0
+        },
+        {
+          "name": "Premium+",
+          "monthlyPrice": 16.0
+        }
+      ]
+    },
+    {
+      "id": "reddit-premium",
+      "name": "Reddit Premium",
+      "logo": "🤖",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Réseaux sociaux",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "snapchat-plus",
+      "name": "Snapchat+",
+      "logo": "👻",
+      "color": "hsl(45, 100%, 50%)",
+      "category": "Réseaux sociaux",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 3.99
+        }
+      ]
+    },
+    {
+      "id": "quora-plus",
+      "name": "Quora+",
+      "logo": "❓",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Réseaux sociaux",
+      "plans": [
+        {
+          "name": "Plus",
+          "monthlyPrice": 5.0
+        }
+      ]
+    },
+    {
+      "id": "later",
+      "name": "Later",
+      "logo": "📸",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 18.0
+        },
+        {
+          "name": "Growth",
+          "monthlyPrice": 40.0
+        }
+      ]
+    },
+    {
+      "id": "sprout-social",
+      "name": "Sprout Social",
+      "logo": "🌱",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 249.0
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 399.0
+        }
+      ]
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind",
+      "logo": "📌",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 14.99
+        },
+        {
+          "name": "Advanced",
+          "monthlyPrice": 39.99
+        }
+      ]
+    },
+    {
+      "id": "planoly",
+      "name": "Planoly",
+      "logo": "📱",
+      "color": "hsl(340, 85%, 55%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 13.0
+        },
+        {
+          "name": "Growth",
+          "monthlyPrice": 23.0
+        }
+      ]
+    },
+    {
+      "id": "squarespace",
+      "name": "Squarespace",
+      "logo": "⬛",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Sites web",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 16.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 23.0
+        }
+      ]
+    },
+    {
+      "id": "wix",
+      "name": "Wix",
+      "logo": "🌐",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Sites web",
+      "plans": [
+        {
+          "name": "Combo",
+          "monthlyPrice": 16.0
+        },
+        {
+          "name": "Unlimited",
+          "monthlyPrice": 22.0
+        }
+      ]
+    },
+    {
+      "id": "wordpress-premium",
+      "name": "WordPress Premium",
+      "logo": "📝",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Sites web",
+      "plans": [
+        {
+          "name": "Personal",
+          "monthlyPrice": 4.0
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 8.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 25.0
+        }
+      ]
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost",
+      "logo": "👻",
+      "color": "hsl(0, 0%, 15%)",
+      "category": "Sites web",
+      "plans": [
+        {
+          "name": "Starter",
+          "monthlyPrice": 9.0
+        },
+        {
+          "name": "Creator",
+          "monthlyPrice": 25.0
+        }
+      ]
+    },
+    {
+      "id": "medium-membership",
+      "name": "Medium Membership",
+      "logo": "📝",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Sites web",
+      "plans": [
+        {
+          "name": "Member",
+          "monthlyPrice": 5.0
+        }
+      ]
+    },
+    {
+      "id": "substack",
+      "name": "Substack",
+      "logo": "📰",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Sites web",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "google-analytics-360",
+      "name": "Google Analytics 360",
+      "logo": "📊",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Analytics",
+      "plans": [
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 12500.0
+        }
+      ]
+    },
+    {
+      "id": "mixpanel",
+      "name": "Mixpanel",
+      "logo": "📈",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Analytics",
+      "plans": [
+        {
+          "name": "Growth",
+          "monthlyPrice": 25.0
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 833.0
+        }
+      ]
+    },
+    {
+      "id": "amplitude",
+      "name": "Amplitude",
+      "logo": "📊",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Analytics",
+      "plans": [
+        {
+          "name": "Growth",
+          "monthlyPrice": 49.0
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 2000.0
+        }
+      ]
+    },
+    {
+      "id": "heap",
+      "name": "Heap",
+      "logo": "📈",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Analytics",
+      "plans": [
+        {
+          "name": "Growth",
+          "monthlyPrice": 3600.0
+        }
+      ]
+    },
+    {
+      "id": "jetbrains",
+      "name": "JetBrains All Products",
+      "logo": "💻",
+      "color": "hsl(0, 0%, 10%)",
+      "category": "Développement",
+      "plans": [
+        {
+          "name": "Individual",
+          "monthlyPrice": 24.9
+        },
+        {
+          "name": "Organizations",
+          "monthlyPrice": 77.9
+        }
+      ]
+    },
+    {
+      "id": "visual-studio",
+      "name": "Visual Studio",
+      "logo": "💻",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Développement",
+      "plans": [
+        {
+          "name": "Professional",
+          "monthlyPrice": 45.0
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 250.0
+        }
+      ]
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "logo": "📮",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Développement",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 12.0
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 29.0
+        }
+      ]
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "logo": "🐛",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Développement",
+      "plans": [
+        {
+          "name": "Team",
+          "monthlyPrice": 26.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 80.0
+        }
+      ]
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "logo": "🐕",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Développement",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 15.0
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 23.0
+        }
+      ]
+    },
+    {
+      "id": "instacart-plus",
+      "name": "Instacart+",
+      "logo": "🛒",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Alimentation",
+      "plans": [
+        {
+          "name": "Annual",
+          "monthlyPrice": 8.25
+        }
+      ]
+    },
+    {
+      "id": "doordash-dashpass",
+      "name": "DoorDash DashPass",
+      "logo": "🍔",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Alimentation",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "uber-eats-pass",
+      "name": "Uber Eats Pass",
+      "logo": "🍕",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Alimentation",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "grubhub-plus",
+      "name": "Grubhub+",
+      "logo": "🍴",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Alimentation",
+      "plans": [
+        {
+          "name": "Monthly",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "tripadvisor-plus",
+      "name": "Tripadvisor Plus",
+      "logo": "✈️",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Voyage",
+      "plans": [
+        {
+          "name": "Annual",
+          "monthlyPrice": 8.25
+        }
+      ]
+    },
+    {
+      "id": "hotels-com-rewards",
+      "name": "Hotels.com One Key",
+      "logo": "🏨",
+      "color": "hsl(0, 75%, 45%)",
+      "category": "Voyage",
+      "plans": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "rover-premium",
+      "name": "Rover Premium",
+      "logo": "🐕",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Animaux",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "wag-premium",
+      "name": "Wag! Premium",
+      "logo": "🐕",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Animaux",
+      "plans": [
+        {
+          "name": "Premium",
+          "monthlyPrice": 9.99
+        }
+      ]
+    },
+    {
+      "id": "crello",
+      "name": "VistaCreate",
+      "logo": "🎨",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 10.0
+        }
+      ]
+    },
+    {
+      "id": "visme",
+      "name": "Visme",
+      "logo": "📊",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 15.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 29.0
+        }
+      ]
+    },
+    {
+      "id": "piktochart",
+      "name": "Piktochart",
+      "logo": "📈",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 24.0
+        }
+      ]
+    },
+    {
+      "id": "snappa",
+      "name": "Snappa",
+      "logo": "✂️",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 10.0
+        }
+      ]
+    },
+    {
+      "id": "remove-bg",
+      "name": "remove.bg",
+      "logo": "🖼️",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Subscription",
+          "monthlyPrice": 9.0
+        }
+      ]
+    },
+    {
+      "id": "clipdrop",
+      "name": "ClipDrop",
+      "logo": "✨",
+      "color": "hsl(270, 75%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 7.0
+        }
+      ]
+    },
+    {
+      "id": "vidyard",
+      "name": "Vidyard",
+      "logo": "📹",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Pro",
+          "monthlyPrice": 19.0
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 59.0
+        }
+      ]
+    },
+    {
+      "id": "camtasia",
+      "name": "Camtasia",
+      "logo": "📹",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "License",
+          "monthlyPrice": 249.0
+        }
+      ]
+    },
+    {
+      "id": "snagit",
+      "name": "Snagit",
+      "logo": "📸",
+      "color": "hsl(25, 85%, 50%)",
+      "category": "Créatif",
+      "plans": [
+        {
+          "name": "License",
+          "monthlyPrice": 49.99
+        }
+      ]
+    },
+    {
+      "id": "rev",
+      "name": "Rev",
+      "logo": "🎧",
+      "color": "hsl(15, 85%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Pay as you go",
+          "monthlyPrice": 0.0
+        }
+      ]
+    },
+    {
+      "id": "trint",
+      "name": "Trint",
+      "logo": "📝",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Essential",
+          "monthlyPrice": 48.0
+        },
+        {
+          "name": "Advanced",
+          "monthlyPrice": 60.0
+        }
+      ]
+    },
+    {
+      "id": "sonix",
+      "name": "Sonix",
+      "logo": "🎙️",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Productivité",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 10.0
+        },
+        {
+          "name": "Premium",
+          "monthlyPrice": 22.0
+        }
+      ]
+    },
+    {
+      "id": "convertkit",
+      "name": "ConvertKit",
+      "logo": "📧",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Creator",
+          "monthlyPrice": 9.0
+        },
+        {
+          "name": "Creator Pro",
+          "monthlyPrice": 25.0
+        }
+      ]
+    },
+    {
+      "id": "activecampaign",
+      "name": "ActiveCampaign",
+      "logo": "📊",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Lite",
+          "monthlyPrice": 29.0
+        },
+        {
+          "name": "Plus",
+          "monthlyPrice": 49.0
+        }
+      ]
+    },
+    {
+      "id": "getresponse",
+      "name": "GetResponse",
+      "logo": "📧",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Email Marketing",
+          "monthlyPrice": 15.0
+        },
+        {
+          "name": "Marketing Automation",
+          "monthlyPrice": 49.0
+        }
+      ]
+    },
+    {
+      "id": "drip",
+      "name": "Drip",
+      "logo": "💧",
+      "color": "hsl(340, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 39.0
+        }
+      ]
+    },
+    {
+      "id": "klaviyo",
+      "name": "Klaviyo",
+      "logo": "📧",
+      "color": "hsl(145, 75%, 45%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Email",
+          "monthlyPrice": 20.0
+        },
+        {
+          "name": "Email & SMS",
+          "monthlyPrice": 35.0
+        }
+      ]
+    },
+    {
+      "id": "moz",
+      "name": "Moz Pro",
+      "logo": "🦖",
+      "color": "hsl(210, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyPrice": 99.0
+        },
+        {
+          "name": "Medium",
+          "monthlyPrice": 179.0
+        }
+      ]
+    },
+    {
+      "id": "spyfu",
+      "name": "SpyFu",
+      "logo": "🕵️",
+      "color": "hsl(220, 75%, 50%)",
+      "category": "Marketing",
+      "plans": [
+        {
+          "name": "Basic",
+          "monthlyPrice": 39.0
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 79.0
+        }
+      ]
+    }
+  ],
+
+  "durationOptions": [
+    { "label": "1 an", "months": 12, "value": "1" },
+    { "label": "3 ans", "months": 36, "value": "3" },
+    { "label": "5 ans", "months": 60, "value": "5" },
+    { "label": "10 ans", "months": 120, "value": "10" }
+  ]
+}

@@ -1,0 +1,19 @@
+# robots.txt for CombienÇaCoûte
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://combien-ca-coute.fr/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Block unnecessary paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important resources
+Allow: /assets/
+Allow: /*.js$
+Allow: /*.css$
