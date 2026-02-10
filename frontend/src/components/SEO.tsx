@@ -9,12 +9,17 @@ interface SEOProps {
   noindex?: boolean;
   structuredData?: object;
   breadcrumbs?: Array<{ name: string; url: string }>;
+  keywords?: string;
+  datePublished?: string;
+  dateModified?: string;
+  author?: string;
 }
 
-const DEFAULT_TITLE = 'CombienÇaCoûte — Le vrai prix de tes abonnements';
-const DEFAULT_DESCRIPTION = 'Netflix, Spotify, Disney+ : découvre combien tes abonnements te coûtent vraiment sur 1, 3, 5 ou 10 ans. Comparateur gratuit et sans inscription.';
+const DEFAULT_TITLE = 'CombienÇaCoûte — Le vrai prix de tes abonnements Netflix, Spotify, Disney+';
+const DEFAULT_DESCRIPTION = 'Comparateur gratuit pour calculer le vrai coût de vos abonnements Netflix, Spotify, Disney+, Amazon Prime sur 1, 3, 5 ou 10 ans. Codes promo et astuces pour économiser jusqu\'à 40%.';
+const DEFAULT_KEYWORDS = 'comparateur abonnement, prix netflix, prix spotify, prix disney plus, coût abonnement streaming, calculateur abonnement, économiser abonnement, code promo netflix, code promo spotify, abonnement pas cher, prix amazon prime, combien coute netflix, combien coute spotify, tarif streaming 2026';
 const SITE_URL = 'https://combien-ca-coute.fr';
-const DEFAULT_IMAGE = 'https://lovable.dev/opengraph-image-p98pqg.png';
+const DEFAULT_IMAGE = 'https://combien-ca-coute.fr/og-image.png';
 
 const SEO = ({
   title = DEFAULT_TITLE,
@@ -25,6 +30,10 @@ const SEO = ({
   noindex = false,
   structuredData,
   breadcrumbs,
+  keywords = DEFAULT_KEYWORDS,
+  datePublished = '2026-01-01',
+  dateModified = '2026-02-10',
+  author = 'CombienÇaCoûte',
 }: SEOProps) => {
   const fullTitle = title === DEFAULT_TITLE ? title : `${title} | CombienÇaCoûte`;
 
@@ -43,9 +52,11 @@ const SEO = ({
   return (
     <Helmet>
       {/* Primary Meta Tags */}
+      <html lang="fr" />
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
       <link rel="canonical" href={canonical} />
       
       {/* Robots */}
@@ -54,6 +65,8 @@ const SEO = ({
       ) : (
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       )}
+      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="bingbot" content="index, follow" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
@@ -61,7 +74,11 @@ const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="CombienÇaCoûte - Comparateur d'abonnements" />
       <meta property="og:locale" content="fr_FR" />
+      <meta property="og:locale:alternate" content="en_US" />
       <meta property="og:site_name" content="CombienÇaCoûte" />
       
       {/* Twitter */}
@@ -70,14 +87,49 @@ const SEO = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:creator" content="@combien_ca_coute" />
+      <meta name="twitter:site" content="@combien_ca_coute" />
+      
+      {/* Article specific */}
+      {type === 'article' && (
+        <>
+          <meta property="article:published_time" content={datePublished} />
+          <meta property="article:modified_time" content={dateModified} />
+          <meta property="article:author" content={author} />
+          <meta property="article:section" content="Finance" />
+          <meta property="article:tag" content="abonnement" />
+          <meta property="article:tag" content="streaming" />
+          <meta property="article:tag" content="économies" />
+        </>
+      )}
       
       {/* Additional SEO Meta Tags */}
-      <meta name="author" content="CombienÇaCoûte" />
+      <meta name="author" content={author} />
       <meta name="publisher" content="CombienÇaCoûte" />
       <meta name="language" content="fr" />
       <meta name="geo.region" content="FR" />
       <meta name="geo.placename" content="France" />
-      <meta name="content-language" content="fr" />
+      <meta name="content-language" content="fr, en" />
+      <meta name="rating" content="general" />
+      <meta name="distribution" content="global" />
+      <meta name="revisit-after" content="7 days" />
+      
+      {/* Mobile & App */}
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <meta name="apple-mobile-web-app-title" content="CombienÇaCoûte" />
+      <meta name="application-name" content="CombienÇaCoûte" />
+      <meta name="theme-color" content="#0a0a0f" />
+      <meta name="msapplication-TileColor" content="#0a0a0f" />
+      
+      {/* PWA */}
+      <link rel="manifest" href="/manifest.json" />
+      
+      {/* Preconnect for performance */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       
       {/* Structured Data */}
       {structuredData && (
@@ -86,7 +138,7 @@ const SEO = ({
         </script>
       )}
       
-      {/* Breadcrumb Schema */}
+      {/* Breadcrumbs Schema */}
       {breadcrumbSchema && (
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
@@ -96,9 +148,44 @@ const SEO = ({
   );
 };
 
-export default SEO;
+// Schema generators
+export const generateWebsiteSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CombienÇaCoûte",
+  "alternateName": ["Combien Ca Coute", "Comparateur Abonnements"],
+  "url": SITE_URL,
+  "description": DEFAULT_DESCRIPTION,
+  "inLanguage": ["fr", "en"],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": `${SITE_URL}/?search={search_term_string}`
+    },
+    "query-input": "required name=search_term_string"
+  }
+});
 
-// Export structured data generators
+export const generateOrganizationSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CombienÇaCoûte",
+  "url": SITE_URL,
+  "logo": `${SITE_URL}/logo.png`,
+  "description": "Comparateur gratuit d'abonnements streaming, musique, jeux vidéo et plus",
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://twitter.com/combien_ca_coute",
+    "https://facebook.com/combien.ca.coute"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "availableLanguage": ["French", "English"]
+  }
+});
+
 export const generateFAQSchema = (faqs: Array<{ question: string; answer: string }>) => ({
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -115,11 +202,13 @@ export const generateFAQSchema = (faqs: Array<{ question: string; answer: string
 export const generateProductSchema = (product: {
   name: string;
   description: string;
-  image?: string;
+  image: string;
+  price: number;
+  priceCurrency?: string;
   url: string;
-  offers: Array<{ name: string; price: number; priceCurrency?: string }>;
   category: string;
-  aggregateRating?: { ratingValue: number; reviewCount: number };
+  rating?: number;
+  reviewCount?: number;
 }) => ({
   "@context": "https://schema.org",
   "@type": "Product",
@@ -128,62 +217,76 @@ export const generateProductSchema = (product: {
   "image": product.image,
   "url": product.url,
   "category": product.category,
-  "offers": product.offers.map(offer => ({
+  "brand": {
+    "@type": "Brand",
+    "name": product.name
+  },
+  "offers": {
     "@type": "Offer",
-    "name": offer.name,
-    "price": offer.price,
-    "priceCurrency": offer.priceCurrency || "EUR",
+    "price": product.price,
+    "priceCurrency": product.priceCurrency || "EUR",
+    "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/InStock",
-    "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0]
-  })),
-  ...(product.aggregateRating && {
+    "url": product.url
+  },
+  ...(product.rating && {
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": product.aggregateRating.ratingValue,
-      "reviewCount": product.aggregateRating.reviewCount,
-      "bestRating": 5,
-      "worstRating": 1
+      "ratingValue": product.rating,
+      "reviewCount": product.reviewCount || 100,
+      "bestRating": "5",
+      "worstRating": "1"
     }
   })
 });
 
-export const generateWebsiteSchema = () => ({
+export const generateServiceSchema = (service: {
+  name: string;
+  description: string;
+  provider: string;
+  serviceType: string;
+  areaServed: string;
+}) => ({
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "CombienÇaCoûte",
-  "alternateName": ["Combien Ca Coute", "CombienCaCoute"],
-  "url": SITE_URL,
-  "description": DEFAULT_DESCRIPTION,
-  "inLanguage": "fr-FR",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": `${SITE_URL}/#comparateur?search={search_term_string}`
-    },
-    "query-input": "required name=search_term_string"
-  }
+  "@type": "Service",
+  "name": service.name,
+  "description": service.description,
+  "provider": {
+    "@type": "Organization",
+    "name": service.provider
+  },
+  "serviceType": service.serviceType,
+  "areaServed": service.areaServed
 });
 
-export const generateOrganizationSchema = () => ({
+export const generateHowToSchema = (howTo: {
+  name: string;
+  description: string;
+  steps: Array<{ name: string; text: string }>;
+  totalTime?: string;
+}) => ({
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "CombienÇaCoûte",
-  "url": SITE_URL,
-  "logo": DEFAULT_IMAGE,
-  "description": "Comparateur gratuit du coût réel des abonnements sur le long terme",
-  "foundingDate": "2025",
-  "areaServed": "FR",
-  "serviceType": "Comparateur d'abonnements"
-});
-
-export const generateItemListSchema = (items: Array<{ name: string; url: string; position: number }>) => ({
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "itemListElement": items.map(item => ({
-    "@type": "ListItem",
-    "position": item.position,
-    "name": item.name,
-    "url": item.url
+  "@type": "HowTo",
+  "name": howTo.name,
+  "description": howTo.description,
+  "totalTime": howTo.totalTime || "PT5M",
+  "step": howTo.steps.map((step, index) => ({
+    "@type": "HowToStep",
+    "position": index + 1,
+    "name": step.name,
+    "text": step.text
   }))
 });
+
+export const generateBreadcrumbSchema = (items: Array<{ name: string; url: string }>) => ({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": items.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": item.name,
+    "item": item.url
+  }))
+});
+
+export default SEO;
