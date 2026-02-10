@@ -7,7 +7,7 @@ import requests
 import json
 
 # Backend URL from frontend/.env
-BACKEND_URL = "https://web-enhancer-31.preview.emergentagent.com/api"
+BACKEND_URL = "https://budget-buddy-4785.preview.emergentagent.com/api"
 
 def test_basic_functionality():
     """Test basic API functionality"""
