@@ -16,7 +16,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "30 days free for new subscribers",
       discount: "1 mois offert",
       discountEn: "1 month free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     },
     {
@@ -25,7 +25,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "10% off on family subscription",
       discount: "-10%",
       discountEn: "-10%",
-      expiresAt: "2025-06-30",
+      expiresAt: "2026-06-30",
       isActive: true
     }
   ],
@@ -36,7 +36,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "3 months Premium free",
       discount: "3 mois offerts",
       discountEn: "3 months free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     },
     {
@@ -45,7 +45,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "50% off for students",
       discount: "-50%",
       discountEn: "-50%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -56,7 +56,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "1 month free on annual subscription",
       discount: "1 mois offert",
       discountEn: "1 month free",
-      expiresAt: "2025-08-31",
+      expiresAt: "2026-08-31",
       isActive: true
     },
     {
@@ -65,7 +65,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "20% discount",
       discount: "-20%",
       discountEn: "-20%",
-      expiresAt: "2025-07-15",
+      expiresAt: "2026-07-15",
       isActive: true
     }
   ],
@@ -76,7 +76,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "30 days free trial",
       discount: "Essai gratuit",
       discountEn: "Free trial",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     },
     {
@@ -85,7 +85,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "50% off for students for 4 years",
       discount: "-50%",
       discountEn: "-50%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -96,7 +96,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "3 months free with new Apple device",
       discount: "3 mois offerts",
       discountEn: "3 months free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -107,7 +107,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "25% off first year",
       discount: "-25%",
       discountEn: "-25%",
-      expiresAt: "2025-09-30",
+      expiresAt: "2026-09-30",
       isActive: true
     }
   ],
@@ -118,7 +118,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "1 month free on family plan",
       discount: "1 mois offert",
       discountEn: "1 month free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -129,7 +129,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "3 months Premium free",
       discount: "3 mois offerts",
       discountEn: "3 months free",
-      expiresAt: "2025-10-31",
+      expiresAt: "2026-10-31",
       isActive: true
     }
   ],
@@ -140,7 +140,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "1 month free for new subscribers",
       discount: "1 mois offert",
       discountEn: "1 month free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -151,7 +151,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "20% off annual subscription",
       discount: "-20%",
       discountEn: "-20%",
-      expiresAt: "2025-11-30",
+      expiresAt: "2026-11-30",
       isActive: true
     }
   ],
@@ -162,7 +162,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "50% off first year",
       discount: "-50%",
       discountEn: "-50%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -173,7 +173,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "First month for €1",
       discount: "1€ le 1er mois",
       discountEn: "€1 first month",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -184,7 +184,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "25% off annual subscription",
       discount: "-25%",
       discountEn: "-25%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -195,7 +195,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "7 days free trial",
       discount: "7 jours gratuits",
       discountEn: "7 days free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -206,7 +206,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "40% off for students and teachers",
       discount: "-40%",
       discountEn: "-40%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -217,7 +217,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "15% off family subscription",
       discount: "-15%",
       discountEn: "-15%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -228,7 +228,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "$10 credit on Plus plan",
       discount: "10$ offerts",
       discountEn: "$10 free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -239,7 +239,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "20% off Plus plan",
       discount: "-20%",
       discountEn: "-20%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -250,7 +250,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "1 month free on 2TB plan",
       discount: "1 mois offert",
       discountEn: "1 month free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -261,7 +261,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "First month free",
       discount: "1 mois offert",
       discountEn: "1 month free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -272,7 +272,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "60 days free trial",
       discount: "60 jours gratuits",
       discountEn: "60 days free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -283,7 +283,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "3 months for €9.99",
       discount: "9,99€ / 3 mois",
       discountEn: "€9.99 / 3 months",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -294,7 +294,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "50% off annual subscription",
       discount: "-50%",
       discountEn: "-50%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -305,7 +305,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "40% off first year",
       discount: "-40%",
       discountEn: "-40%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -316,7 +316,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "60 days Premium trial",
       discount: "60 jours gratuits",
       discountEn: "60 days free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -327,7 +327,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "14 days free trial",
       discount: "14 jours gratuits",
       discountEn: "14 days free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -338,7 +338,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "70% off 2-year plan",
       discount: "-70%",
       discountEn: "-70%",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ],
@@ -349,7 +349,7 @@ export const promoCodes: Record<string, PromoCode[]> = {
       descriptionEn: "3 months free on annual plan",
       discount: "3 mois offerts",
       discountEn: "3 months free",
-      expiresAt: "2025-12-31",
+      expiresAt: "2026-12-31",
       isActive: true
     }
   ]
