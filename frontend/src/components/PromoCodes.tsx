@@ -24,7 +24,7 @@ const PromoCodes = ({ subscriptionId, subscriptionName }: PromoCodesProps) => {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
 
   // Récupérer les codes promo pour cet abonnement
-  const codes: PromoCode[] = (promoCodes as Record<string, PromoCode[]>)[subscriptionId] || [];
+  const codes: PromoCode[] = promoCodes[subscriptionId] || [];
   
   // Filtrer les codes actifs et non expirés
   const activeCodes = codes.filter(code => {
