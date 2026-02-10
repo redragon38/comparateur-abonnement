@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpDown, TrendingUp, TrendingDown, Type } from "lucide-react"; // Remplacé AlphabeticalIcon par Type
+import { ArrowUpDown, TrendingUp, TrendingDown, Type } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export type SortOption = 'name-asc' | 'name-desc' | 'price-asc' | 'price-desc' | 'category';
 
@@ -16,12 +17,14 @@ interface SortSelectorProps {
 }
 
 const SortSelector = ({ currentSort, onSortChange }: SortSelectorProps) => {
+  const { language } = useLanguage();
+
   const sortOptions = [
-    { value: 'name-asc', label: 'Nom (A-Z)', icon: Type },
-    { value: 'name-desc', label: 'Nom (Z-A)', icon: Type },
-    { value: 'price-asc', label: 'Prix croissant', icon: TrendingUp },
-    { value: 'price-desc', label: 'Prix décroissant', icon: TrendingDown },
-    { value: 'category', label: 'Par catégorie', icon: ArrowUpDown },
+    { value: 'name-asc', labelFr: 'Nom (A-Z)', labelEn: 'Name (A-Z)', icon: Type },
+    { value: 'name-desc', labelFr: 'Nom (Z-A)', labelEn: 'Name (Z-A)', icon: Type },
+    { value: 'price-asc', labelFr: 'Prix croissant', labelEn: 'Price (low to high)', icon: TrendingUp },
+    { value: 'price-desc', labelFr: 'Prix décroissant', labelEn: 'Price (high to low)', icon: TrendingDown },
+    { value: 'category', labelFr: 'Par catégorie', labelEn: 'By category', icon: ArrowUpDown },
   ] as const;
 
   const currentOption = sortOptions.find(opt => opt.value === currentSort);
@@ -32,7 +35,7 @@ const SortSelector = ({ currentSort, onSortChange }: SortSelectorProps) => {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className="glass border-white/10 hover:glass-strong">
           <Icon className="w-4 h-4 mr-2" />
-          Trier
+          {language === 'fr' ? 'Trier' : 'Sort'}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="glass-strong border-white/10">
@@ -47,7 +50,7 @@ const SortSelector = ({ currentSort, onSortChange }: SortSelectorProps) => {
               }`}
             >
               <OptionIcon className="w-4 h-4 mr-2" />
-              {option.label}
+              {language === 'fr' ? option.labelFr : option.labelEn}
             </DropdownMenuItem>
           );
         })}
