@@ -139,52 +139,41 @@ async def increment_helpful(app_id: str, review_id: str):
 # Download project endpoint
 @api_router.get("/download-project")
 async def download_project():
-    """Télécharger TOUT le projet en ZIP"""
+    """Télécharger ABSOLUMENT TOUT le projet en ZIP"""
     try:
-        # Créer un buffer en mémoire
         zip_buffer = io.BytesIO()
-        
         project_root = Path("/app")
         
-        # Dossiers/fichiers à EXCLURE (volumineux ou inutiles)
-        exclude_dirs = {'node_modules', '__pycache__', '.git', '.emergent', 'build', 'dist', '.venv', 'test_reports', '.cache', '.npm', '.yarn'}
-        exclude_extensions = {'.pyc', '.pyo', '.log', '.tmp', '.lock'}
-        exclude_files = {'project.zip', 'yarn.lock', 'package-lock.json', 'bun.lockb'}
+        # Exclure UNIQUEMENT les dossiers très volumineux
+        exclude_dirs = {'node_modules', '.git'}
         
         with zipfile.ZipFile(zip_buffer, 'w', zipfile.ZIP_DEFLATED) as zip_file:
-            # Parcourir TOUT le projet
             for file_path in project_root.rglob('*'):
                 if file_path.is_file():
-                    # Vérifier les exclusions de dossiers
+                    # Exclure uniquement node_modules et .git
                     if any(part in exclude_dirs for part in file_path.parts):
                         continue
-                    # Vérifier les exclusions d'extensions
-                    if file_path.suffix in exclude_extensions:
-                        continue
-                    # Vérifier les exclusions de fichiers spécifiques
-                    if file_path.name in exclude_files:
-                        continue
                     
-                    # Chemin relatif dans le ZIP
                     arcname = str(file_path.relative_to(project_root))
-                    zip_file.write(file_path, arcname)
-                    
-            logger.info(f"Fichiers ajoutés au ZIP: {len(zip_file.namelist())}")
+                    try:
+                        zip_file.write(file_path, arcname)
+                    except Exception as e:
+                        logger.warning(f"Impossible d'ajouter {arcname}: {e}")
+                        
+            logger.info(f"Total fichiers dans le ZIP: {len(zip_file.namelist())}")
         
-        # Remettre le curseur au début
         zip_buffer.seek(0)
-        
-        logger.info("Projet ZIP complet généré avec succès")
+        logger.info("Projet ZIP COMPLET généré")
         
         return StreamingResponse(
             zip_buffer,
             media_type="application/zip",
             headers={
-                "Content-Disposition": "attachment; filename=combien-ca-coute-project.zip"
+                "Content-Disposition": "attachment; filename=combien-ca-coute-COMPLET.zip"
             }
         )
     except Exception as e:
-        logger.error(f"Erreur lors de la génération du ZIP: {e}")
+        logger.error(f"Erreur ZIP: {e}")
         raise
 
 # Include the router in the main app
