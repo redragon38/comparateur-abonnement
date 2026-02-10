@@ -69,6 +69,20 @@ const Navbar = () => {
               FAQ
             </a>
             
+            {/* Bouton télécharger le projet */}
+            <motion.button
+              onClick={handleDownloadProject}
+              disabled={isDownloading}
+              className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-foreground font-medium text-sm hover:bg-white/10 transition-colors disabled:opacity-50"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Télécharger le projet"
+              data-testid="download-project-btn"
+            >
+              <Download className={`w-4 h-4 ${isDownloading ? 'animate-bounce' : ''}`} aria-hidden="true" />
+              <span>{isDownloading ? 'Téléchargement...' : 'Télécharger'}</span>
+            </motion.button>
+            
             {/* Bouton pour proposer un abonnement */}
             <motion.button
               onClick={() => setIsModalOpen(true)}
