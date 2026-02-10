@@ -388,7 +388,7 @@ const ComparisonSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             <LayoutGrid className="w-4 h-4" />
-            Grille
+            {language === 'fr' ? 'Grille' : 'Grid'}
           </motion.button>
           <motion.button
             onClick={() => setViewMode("chart")}
@@ -403,7 +403,7 @@ const ComparisonSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             <BarChart3 className="w-4 h-4" />
-            Graphique
+            {language === 'fr' ? 'Graphique' : 'Chart'}
           </motion.button>
         </div>
 
