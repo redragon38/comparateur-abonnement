@@ -1,0 +1,134 @@
+/* Print Styles - Mode d'impression optimisé */
+
+@media print {
+  /* Hide non-essential elements */
+  nav,
+  footer,
+  button:not(.print-keep),
+  .no-print,
+  [role="dialog"],
+  [data-radix-portal] {
+    display: none !important;
+  }
+
+  /* Reset backgrounds for printing */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Ensure content fits on page */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Remove glassmorphism effects */
+  .glass,
+  .glass-strong,
+  .stat-card-shock,
+  .stat-card-accent {
+    background: white !important;
+    border: 1px solid #ccc !important;
+    backdrop-filter: none !important;
+  }
+
+  /* Print-friendly cards */
+  .subscription-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  /* Optimize text for print */
+  .text-foreground {
+    color: black !important;
+  }
+
+  .text-foreground\/60,
+  .text-foreground\/40 {
+    color: #666 !important;
+  }
+
+  /* Ensure important info is visible */
+  .print-important {
+    font-weight: bold !important;
+    font-size: 1.1em !important;
+  }
+
+  /* Remove unnecessary spacing */
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Print charts as they are */
+  canvas,
+  svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* Links */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    font-style: italic;
+  }
+
+  /* Print header */
+  @page {
+    margin: 2cm;
+  }
+
+  /* First page header */
+  .print-header {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #000;
+  }
+
+  /* Summary table */
+  .print-summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+
+  .print-summary th,
+  .print-summary td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  .print-summary th {
+    background: #f0f0f0;
+    font-weight: bold;
+  }
+
+  /* Print footer */
+  .print-footer {
+    display: block !important;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    color: #666;
+  }
+}
+
+/* Print button styling when visible */
+@media screen {
+  .print-only {
+    display: none;
+  }
+}
