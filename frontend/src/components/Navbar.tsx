@@ -2,16 +2,18 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Plus, Menu, X, Download } from "lucide-react";
 import ProposeSubscriptionModal from "./ProposeSubscriptionModal";
+import LanguageSelector from "./LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
+  const { t } = useLanguage();
 
   const handleDownloadProject = async () => {
     setIsDownloading(true);
     try {
-      // Utiliser l'URL du backend depuis les variables d'environnement
       const backendUrl = (import.meta.env.VITE_BACKEND_URL || 
                           import.meta.env.REACT_APP_BACKEND_URL || 
                           (window as any).env?.REACT_APP_BACKEND_URL ||
@@ -26,7 +28,7 @@ const Navbar = () => {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'combien-ca-coute-project.zip';
+      a.download = 'combien-ca-coute-COMPLET.zip';
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
@@ -55,25 +57,28 @@ const Navbar = () => {
           </a>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3">
             <a
               href="#comparateur"
               className="text-sm font-medium text-foreground/60 hover:text-foreground transition-colors"
             >
-              Comparer
+              {t('nav.compare')}
             </a>
             <a
               href="#astuces"
               className="text-sm font-medium text-foreground/60 hover:text-foreground transition-colors"
             >
-              Astuces
+              {t('nav.tips')}
             </a>
             <a
               href="#faq"
               className="text-sm font-medium text-foreground/60 hover:text-foreground transition-colors"
             >
-              FAQ
+              {t('nav.faq')}
             </a>
+            
+            {/* Sélecteur de langue */}
+            <LanguageSelector />
             
             {/* Bouton télécharger le projet */}
             <motion.button
@@ -82,11 +87,11 @@ const Navbar = () => {
               className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-foreground font-medium text-sm hover:bg-white/10 transition-colors disabled:opacity-50"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Télécharger le projet"
+              aria-label={t('nav.download')}
               data-testid="download-project-btn"
             >
               <Download className={`w-4 h-4 ${isDownloading ? 'animate-bounce' : ''}`} aria-hidden="true" />
-              <span>{isDownloading ? 'Téléchargement...' : 'Télécharger'}</span>
+              <span>{isDownloading ? t('nav.downloading') : t('nav.download')}</span>
             </motion.button>
             
             {/* Bouton pour proposer un abonnement */}
@@ -95,27 +100,30 @@ const Navbar = () => {
               className="flex items-center gap-2 px-4 py-2 rounded-xl stat-card-accent text-white font-medium text-sm glow-accent"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Proposer un nouvel abonnement"
+              aria-label={t('nav.propose')}
             >
               <Plus className="w-4 h-4" aria-hidden="true" />
-              <span>Proposer</span>
+              <span>{t('nav.propose')}</span>
             </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden p-2 glass rounded-lg"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-expanded={isMobileMenuOpen}
-            aria-controls="mobile-menu"
-            aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-5 h-5" aria-hidden="true" />
-            ) : (
-              <Menu className="w-5 h-5" aria-hidden="true" />
-            )}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSelector />
+            <button 
+              className="p-2 glass rounded-lg"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
+              aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-5 h-5" aria-hidden="true" />
+              ) : (
+                <Menu className="w-5 h-5" aria-hidden="true" />
+              )}
+            </button>
+          </div>
         </nav>
 
         {/* Mobile Navigation */}
@@ -134,21 +142,21 @@ const Navbar = () => {
                 className="text-sm font-medium text-foreground/60 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Comparer les abonnements
+                {t('nav.mobileCompare')}
               </a>
               <a
                 href="#astuces"
                 className="text-sm font-medium text-foreground/60 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Astuces économies
+                {t('nav.mobileTips')}
               </a>
               <a
                 href="#faq"
                 className="text-sm font-medium text-foreground/60 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Questions fréquentes
+                {t('nav.mobileFaq')}
               </a>
               <button
                 onClick={() => {
@@ -159,7 +167,7 @@ const Navbar = () => {
                 className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-foreground font-medium text-sm w-fit disabled:opacity-50"
               >
                 <Download className={`w-4 h-4 ${isDownloading ? 'animate-bounce' : ''}`} aria-hidden="true" />
-                <span>{isDownloading ? 'Téléchargement...' : 'Télécharger le projet'}</span>
+                <span>{isDownloading ? t('nav.downloading') : t('nav.mobileDownload')}</span>
               </button>
               <button
                 onClick={() => {
@@ -169,7 +177,7 @@ const Navbar = () => {
                 className="flex items-center gap-2 px-4 py-2 rounded-xl stat-card-accent text-white font-medium text-sm w-fit"
               >
                 <Plus className="w-4 h-4" aria-hidden="true" />
-                <span>Proposer un abonnement</span>
+                <span>{t('nav.mobilePropose')}</span>
               </button>
             </div>
           </motion.nav>
