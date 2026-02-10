@@ -282,7 +282,7 @@ const SubscriptionDetail = () => {
                 >
                   <h3 id="devices-title" className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <Globe className="w-5 h-5" aria-hidden="true" />
-                    Appareils compatibles
+                    {language === 'fr' ? 'Appareils compatibles' : 'Compatible devices'}
                   </h3>
                   <ul className="flex flex-wrap gap-2" role="list">
                     {enrichedData.devices.map((device, index) => (
