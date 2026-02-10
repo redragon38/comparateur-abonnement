@@ -183,6 +183,12 @@ const Index = () => {
             />
           </div>
         </section>
+        
+        {/* Contenu SEO riche */}
+        <SEOContent />
+        
+        {/* Liens internes par catégorie */}
+        <InternalLinks />
       </main>
       
       <Footer />
