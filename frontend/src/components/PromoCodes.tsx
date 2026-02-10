@@ -4,16 +4,6 @@ import { Tag, Copy, Check, Clock, Gift } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { promoCodes, type PromoCode } from "@/data/promoCodes";
 
-interface PromoCode {
-  code: string;
-  description: string;
-  descriptionEn: string;
-  discount: string;
-  discountEn: string;
-  expiresAt: string;
-  isActive: boolean;
-}
-
 interface PromoCodesProps {
   subscriptionId: string;
   subscriptionName: string;
