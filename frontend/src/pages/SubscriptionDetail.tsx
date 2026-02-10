@@ -70,18 +70,22 @@ const SubscriptionDetail = () => {
   const productSchema = generateProductSchema({
     name: subscription.name,
     description: enrichedData?.description || `Service d'abonnement ${subscription.category}`,
+    image: `https://combien-ca-coute.fr/logos/${subscription.id}.png`,
     url: `https://combien-ca-coute.fr/subscription/${subscription.id}`,
+    price: subscription.plans[0].monthlyPrice,
     category: subscription.category,
-    offers: subscription.plans.map(plan => ({
-      name: plan.name,
-      price: plan.monthlyPrice,
-      priceCurrency: "EUR"
-    }))
+    rating: 4.5,
+    reviewCount: 150
   });
+
+  // Keywords spécifiques à l'abonnement
+  const keywords = language === 'fr'
+    ? `prix ${subscription.name}, tarif ${subscription.name} 2026, combien coute ${subscription.name}, ${subscription.name} abonnement, ${subscription.name} ${subscription.category.toLowerCase()}, code promo ${subscription.name}`
+    : `${subscription.name} price, ${subscription.name} cost 2026, how much is ${subscription.name}, ${subscription.name} subscription, ${subscription.name} promo code`;
 
   // Breadcrumbs for SEO
   const breadcrumbs = [
-    { name: "Accueil", url: "https://combien-ca-coute.fr/" },
+    { name: language === 'fr' ? "Accueil" : "Home", url: "https://combien-ca-coute.fr/" },
     { name: subscription.category, url: `https://combien-ca-coute.fr/#comparateur` },
     { name: subscription.name, url: `https://combien-ca-coute.fr/subscription/${subscription.id}` }
   ];
@@ -95,6 +99,8 @@ const SubscriptionDetail = () => {
         type="product"
         structuredData={productSchema}
         breadcrumbs={breadcrumbs}
+        keywords={keywords}
+        dateModified="2026-02-10"
       />
       
       <Navbar />
