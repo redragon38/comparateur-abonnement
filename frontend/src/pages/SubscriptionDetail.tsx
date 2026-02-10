@@ -105,7 +105,7 @@ const SubscriptionDetail = () => {
             <ol className="flex items-center gap-2 text-sm text-foreground/60" itemScope itemType="https://schema.org/BreadcrumbList">
               <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
                 <a href="/" itemProp="item" className="hover:text-foreground transition-colors">
-                  <span itemProp="name">Accueil</span>
+                  <span itemProp="name">{language === 'fr' ? 'Accueil' : 'Home'}</span>
                 </a>
                 <meta itemProp="position" content="1" />
               </li>
