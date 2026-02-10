@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Search, Filter } from "lucide-react";
 import { useState, forwardRef } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface FilterBarProps {
   searchQuery: string;
@@ -10,6 +11,26 @@ interface FilterBarProps {
   categories: string[];
 }
 
+const categoryTranslations: Record<string, { fr: string; en: string }> = {
+  'Streaming vidéo': { fr: 'Streaming vidéo', en: 'Video streaming' },
+  'Musique': { fr: 'Musique', en: 'Music' },
+  'Multi-services': { fr: 'Multi-services', en: 'Multi-services' },
+  'Jeux vidéo': { fr: 'Jeux vidéo', en: 'Video games' },
+  'Productivité': { fr: 'Productivité', en: 'Productivity' },
+  'Stockage': { fr: 'Stockage', en: 'Storage' },
+  'Communication': { fr: 'Communication', en: 'Communication' },
+  'Éducation': { fr: 'Éducation', en: 'Education' },
+  'Livres audio': { fr: 'Livres audio', en: 'Audiobooks' },
+  'Livres': { fr: 'Livres', en: 'Books' },
+  'Bien-être': { fr: 'Bien-être', en: 'Wellness' },
+  'Sport': { fr: 'Sport', en: 'Sport' },
+  'Actualités': { fr: 'Actualités', en: 'News' },
+  'Marketing': { fr: 'Marketing', en: 'Marketing' },
+  'Presse': { fr: 'Presse', en: 'Press' },
+  'Fitness': { fr: 'Fitness', en: 'Fitness' },
+  'Méditation': { fr: 'Méditation', en: 'Meditation' },
+};
+
 const FilterBar = forwardRef<HTMLInputElement, FilterBarProps>(({ 
   searchQuery, 
   onSearchChange, 
@@ -18,6 +39,12 @@ const FilterBar = forwardRef<HTMLInputElement, FilterBarProps>(({
   categories 
 }, ref) => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const { t, language } = useLanguage();
+
+  const translateCategory = (cat: string) => {
+    const trans = categoryTranslations[cat];
+    return trans ? trans[language] : cat;
+  };
 
   return (
     <motion.div 
@@ -32,7 +59,7 @@ const FilterBar = forwardRef<HTMLInputElement, FilterBarProps>(({
         <input
           ref={ref}
           type="text"
-          placeholder="Rechercher un service... (tapez /)"
+          placeholder={t('filter.search')}
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
           className="w-full pl-12 pr-4 py-3 rounded-xl glass-strong text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
@@ -46,7 +73,7 @@ const FilterBar = forwardRef<HTMLInputElement, FilterBarProps>(({
           className="glass-strong rounded-lg px-4 py-2 flex items-center gap-2 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
         >
           <Filter className="w-4 h-4" />
-          Catégories
+          {t('filter.categories')}
         </button>
 
         <div className="flex flex-wrap gap-2">
@@ -62,7 +89,7 @@ const FilterBar = forwardRef<HTMLInputElement, FilterBarProps>(({
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Tous
+            {t('filter.all')}
           </motion.button>
 
           {categories.map((category) => (
@@ -79,7 +106,7 @@ const FilterBar = forwardRef<HTMLInputElement, FilterBarProps>(({
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {category}
+              {translateCategory(category)}
             </motion.button>
           ))}
         </div>
