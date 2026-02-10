@@ -6,6 +6,7 @@ import { Heart, GitCompare, Eye } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { getBadgesForSubscription, calculateValueScore } from "@/lib/badgesUtils";
 import { Badge } from "./ui/badge";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface SubscriptionCardProps {
   subscription: Subscription;
@@ -33,14 +34,24 @@ const SubscriptionCard = ({
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { t, language } = useLanguage();
   const plan = subscription.plans[selectedPlanIndex];
   const totalCost = calculateTotalCost(plan.monthlyPrice, duration.months);
   const isExpensive = totalCost > 500;
   const badges = getBadgesForSubscription(subscription);
   const valueScore = calculateValueScore(subscription);
 
+  const getDurationLabel = () => {
+    if (language === 'en') {
+      if (duration.months === 12) return '1 year';
+      if (duration.months === 36) return '3 years';
+      if (duration.months === 60) return '5 years';
+      if (duration.months === 120) return '10 years';
+    }
+    return duration.label;
+  };
+
   const handleCardClick = (e: React.MouseEvent) => {
-    // Ne pas naviguer si on clique sur un bouton de plan ou une action
     if (
       (e.target as HTMLElement).closest('button[data-plan-button]') ||
       (e.target as HTMLElement).closest('button[data-action-button]')
@@ -55,8 +66,10 @@ const SubscriptionCard = ({
     if (onToggleFavorite) {
       onToggleFavorite(subscription.id);
       toast({
-        title: isFavorite ? "Retiré des favoris" : "Ajouté aux favoris",
-        description: `${subscription.name} ${isFavorite ? 'a été retiré de' : 'a été ajouté à'} vos favoris`,
+        title: isFavorite ? t('card.removedFavorites') : t('card.addedFavorites'),
+        description: `${subscription.name} ${isFavorite 
+          ? (language === 'fr' ? 'a été retiré de' : 'has been removed from') 
+          : (language === 'fr' ? 'a été ajouté à' : 'has been added to')} ${language === 'fr' ? 'vos favoris' : 'your favorites'}`,
         duration: 2000,
       });
     }
@@ -67,8 +80,10 @@ const SubscriptionCard = ({
     if (onToggleCompare) {
       onToggleCompare(subscription.id);
       toast({
-        title: isCompared ? "Retiré de la comparaison" : "Ajouté à la comparaison",
-        description: `${subscription.name} ${isCompared ? 'a été retiré de' : 'a été ajouté à'} la comparaison`,
+        title: isCompared ? t('card.removedCompare') : t('card.addedCompare'),
+        description: `${subscription.name} ${isCompared 
+          ? (language === 'fr' ? 'a été retiré de' : 'has been removed from') 
+          : (language === 'fr' ? 'a été ajouté à' : 'has been added to')} ${language === 'fr' ? 'la comparaison' : 'comparison'}`,
         duration: 2000,
       });
     }
@@ -132,7 +147,7 @@ const SubscriptionCard = ({
               className="p-2 rounded-lg glass text-foreground/40 hover:text-accent transition-all"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Aperçu rapide"
+              aria-label={t('card.quickView')}
             >
               <Eye className="w-4 h-4" />
             </motion.button>
@@ -148,7 +163,7 @@ const SubscriptionCard = ({
               }`}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Favori"
+              aria-label={t('card.favorite')}
             >
               <Heart className={`w-4 h-4 ${isFavorite ? 'fill-current' : ''}`} />
             </motion.button>
@@ -164,7 +179,7 @@ const SubscriptionCard = ({
               }`}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Comparer"
+              aria-label={t('card.compare')}
             >
               <GitCompare className="w-4 h-4" />
             </motion.button>
@@ -229,7 +244,7 @@ const SubscriptionCard = ({
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <span className="text-sm text-foreground/40">Par mois</span>
+          <span className="text-sm text-foreground/40">{t('card.perMonth')}</span>
           <span className="text-lg font-semibold text-foreground/80">{formatPrice(plan.monthlyPrice)}</span>
         </motion.div>
 
@@ -241,7 +256,7 @@ const SubscriptionCard = ({
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          <span className="text-sm text-foreground/40">Sur {duration.label}</span>
+          <span className="text-sm text-foreground/40">{t('card.over')} {getDurationLabel()}</span>
           <motion.span 
             className={`text-2xl font-bold ${isExpensive ? "text-gradient-shock" : "text-foreground"}`}
             key={totalCost}
@@ -261,7 +276,7 @@ const SubscriptionCard = ({
             transition={{ delay: 0.4 }}
             whileHover={{ scale: 1.02 }}
           >
-            💸 {formatPrice(totalCost)} partis en {duration.label}
+            💸 {formatPrice(totalCost)} {t('card.spent')} {getDurationLabel()}
           </motion.div>
         )}
 
@@ -272,7 +287,7 @@ const SubscriptionCard = ({
           animate={{ opacity: isHovered ? 1 : 0 }}
           transition={{ duration: 0.2 }}
         >
-          Cliquez pour plus d'infos →
+          {t('card.clickMore')}
         </motion.div>
       </div>
     </motion.div>
