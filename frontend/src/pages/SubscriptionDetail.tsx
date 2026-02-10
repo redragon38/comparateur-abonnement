@@ -337,7 +337,7 @@ const SubscriptionDetail = () => {
 
                 {/* Duration selector */}
                 <fieldset className="space-y-2">
-                  <legend className="text-sm text-foreground/60">Durée</legend>
+                  <legend className="text-sm text-foreground/60">{language === 'fr' ? 'Durée' : 'Duration'}</legend>
                   <div className="grid grid-cols-2 gap-2" role="radiogroup" aria-label="Sélection de la durée">
                     {durationOptions.map((opt) => (
                       <button
