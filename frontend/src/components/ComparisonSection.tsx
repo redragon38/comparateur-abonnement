@@ -255,7 +255,7 @@ const ComparisonSection = () => {
               onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
             >
               <Heart className={`w-4 h-4 mr-2 ${showFavoritesOnly ? 'fill-current text-red-400' : ''}`} />
-              Favoris {favoritesCount > 0 && `(${favoritesCount})`}
+              {language === 'fr' ? 'Favoris' : 'Favorites'} {favoritesCount > 0 && `(${favoritesCount})`}
             </Button>
 
             <Button
