@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tag, Copy, Check, Clock, Gift } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import promoCodes from "@/data/promoCodes.json";
+import { promoCodes, type PromoCode } from "@/data/promoCodes";
 
 interface PromoCode {
   code: string;
