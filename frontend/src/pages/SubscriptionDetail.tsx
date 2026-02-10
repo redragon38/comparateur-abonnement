@@ -306,12 +306,12 @@ const SubscriptionDetail = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h3 className="text-xl font-bold text-foreground">Tarifs</h3>
+                <h3 className="text-xl font-bold text-foreground">{language === 'fr' ? 'Tarifs' : 'Pricing'}</h3>
 
                 {/* Plan selector */}
                 {subscription.plans.length > 1 && (
                   <fieldset className="space-y-2">
-                    <legend className="text-sm text-foreground/60">Choisir un forfait</legend>
+                    <legend className="text-sm text-foreground/60">{language === 'fr' ? 'Choisir un forfait' : 'Choose a plan'}</legend>
                     <div className="space-y-2" role="radiogroup" aria-label="Sélection du forfait">
                       {subscription.plans.map((plan, index) => (
                         <button
