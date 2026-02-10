@@ -5,7 +5,7 @@ import SubscriptionCard from "./SubscriptionCard";
 import ShockBanner from "./ShockBanner";
 import FilterBar from "./FilterBar";
 import ComparisonChart from "./ComparisonChart";
-import DurationSelector from "./DurationSelector";
+import SortSelector, { type SortOption } from "./SortSelector";
 import RecommendationsModal from "./RecommendationsModal";
 import DirectComparison from "./DirectComparison";
 import Pagination from "./Pagination";
