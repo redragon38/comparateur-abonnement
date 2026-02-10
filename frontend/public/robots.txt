@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://combien-ca-coute.fr/sitemap.xml
+
+# Optimized for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
