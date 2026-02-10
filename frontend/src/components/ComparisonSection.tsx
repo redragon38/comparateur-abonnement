@@ -264,7 +264,7 @@ const ComparisonSection = () => {
               onClick={() => setShowPriceFilter(!showPriceFilter)}
             >
               <DollarSign className="w-4 h-4 mr-2" />
-              Prix
+              {language === 'fr' ? 'Prix' : 'Price'}
             </Button>
 
             {Object.keys(selectedPlans).length > 0 && (
