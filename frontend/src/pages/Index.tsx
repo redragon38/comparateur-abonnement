@@ -108,6 +108,12 @@ const Index = () => {
       <main className="flex-1" role="main">
         <Hero />
         
+        {/* Stats en temps réel */}
+        <LiveStats />
+        
+        {/* Recently viewed */}
+        <RecentlyViewed />
+        
         {/* Personal Dashboard Section */}
         <section className="py-8" aria-label="Tableau de bord personnel">
           <div className="container space-y-6">
@@ -146,10 +152,25 @@ const Index = () => {
         </section>
 
         <ComparisonSection />
+        
+        {/* Calculateur interactif */}
+        <SavingsCalculator />
+        
         <Statistics />
         <CustomCalculator />
+        
+        {/* Témoignages */}
+        <Testimonials />
+        
         <SavingTips />
+        
+        {/* Articles populaires */}
+        <PopularArticles />
+        
         <FaqSection />
+        
+        {/* Newsletter */}
+        <Newsletter />
         
         {/* Section des avis */}
         <section className="py-12 md:py-20" aria-label="Avis des utilisateurs">
