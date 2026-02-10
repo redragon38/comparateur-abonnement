@@ -476,15 +476,6 @@ const ComparisonSection = () => {
           </motion.div>
         )}
 
-        {/* Share/Export component */}
-        {filteredSubscriptions.length > 0 && (
-          <ShareExport 
-            subscriptions={filteredSubscriptions}
-            selectedPlans={selectedPlans}
-            duration={duration}
-          />
-        )}
-
         {/* Disclaimer */}
         <p className="text-center text-xs text-foreground/30 max-w-lg mx-auto">
           * Prix indicatifs relevés en juillet 2025 sur les sites officiels des services.
