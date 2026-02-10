@@ -185,7 +185,7 @@ const SubscriptionDetail = () => {
                     {enrichedData.founded && (
                       <div className="flex items-center gap-2 text-sm text-foreground/60">
                         <Calendar className="w-4 h-4" aria-hidden="true" />
-                        <span>Fondé en {enrichedData.founded}</span>
+                        <span>{language === 'fr' ? 'Fondé en' : 'Founded in'} {enrichedData.founded}</span>
                       </div>
                     )}
                     {enrichedData.headquarters && (
