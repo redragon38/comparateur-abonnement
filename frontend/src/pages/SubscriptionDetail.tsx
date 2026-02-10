@@ -297,6 +297,12 @@ const SubscriptionDetail = () => {
                   </ul>
                 </motion.section>
               )}
+
+              {/* Promo Codes */}
+              <PromoCodes 
+                subscriptionId={subscription.id} 
+                subscriptionName={subscription.name} 
+              />
             </article>
 
             {/* Sidebar - Pricing */}
