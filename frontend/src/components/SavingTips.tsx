@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { Lightbulb, TrendingDown, Users, Calendar } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const SavingTips = () => {
-  const tips = [
+  const { language } = useLanguage();
+
+  const tipsFr = [
     {
       icon: <Users className="w-6 h-6" aria-hidden="true" />,
       title: "Partage de compte",
@@ -29,6 +32,35 @@ const SavingTips = () => {
     }
   ];
 
+  const tipsEn = [
+    {
+      icon: <Users className="w-6 h-6" aria-hidden="true" />,
+      title: "Account sharing",
+      description: "Share your Netflix, Spotify or Disney+ subscriptions with family or friends to split costs among up to 6 people.",
+      color: "stat-card-shock"
+    },
+    {
+      icon: <Calendar className="w-6 h-6" aria-hidden="true" />,
+      title: "Annual subscriptions",
+      description: "Choose annual subscriptions instead of monthly to save up to 20% on the total price.",
+      color: "stat-card-accent"
+    },
+    {
+      icon: <TrendingDown className="w-6 h-6" aria-hidden="true" />,
+      title: "Cancel unused ones",
+      description: "Cancel streaming subscriptions you no longer use. You can always resubscribe whenever you want.",
+      color: "stat-card-purple"
+    },
+    {
+      icon: <Lightbulb className="w-6 h-6" aria-hidden="true" />,
+      title: "Free alternatives",
+      description: "Explore free alternatives like YouTube, Pluto TV or free trials of premium services.",
+      color: "stat-card-shock"
+    }
+  ];
+
+  const tips = language === 'fr' ? tipsFr : tipsEn;
+
   return (
     <section id="astuces" className="py-16 md:py-20" aria-labelledby="tips-title">
       <div className="container">
@@ -40,10 +72,16 @@ const SavingTips = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 id="tips-title" className="text-3xl md:text-5xl font-bold">
-            Comment <span className="text-gradient-accent">économiser</span> sur vos abonnements ?
+            {language === 'fr' ? (
+              <>Comment <span className="text-gradient-accent">économiser</span> sur vos abonnements ?</>
+            ) : (
+              <>How to <span className="text-gradient-accent">save</span> on your subscriptions?</>
+            )}
           </h2>
           <p className="text-foreground/50 max-w-xl mx-auto text-lg">
-            Quelques astuces simples pour réduire tes dépenses en abonnements streaming.
+            {language === 'fr' 
+              ? 'Quelques astuces simples pour réduire tes dépenses en abonnements streaming.'
+              : 'Some simple tips to reduce your streaming subscription expenses.'}
           </p>
         </motion.header>
 
@@ -76,14 +114,20 @@ const SavingTips = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          aria-label="Économie potentielle"
+          aria-label={language === 'fr' ? "Économie potentielle" : "Potential savings"}
         >
-          <p className="text-foreground/70 mb-2">En appliquant ces conseils, tu pourrais économiser</p>
+          <p className="text-foreground/70 mb-2">
+            {language === 'fr' 
+              ? 'En appliquant ces conseils, tu pourrais économiser'
+              : 'By applying these tips, you could save'}
+          </p>
           <p className="text-4xl md:text-5xl font-bold text-gradient-shock mb-2">
-            jusqu'à 40%
+            {language === 'fr' ? "jusqu'à 40%" : "up to 40%"}
           </p>
           <p className="text-foreground/50 text-sm">
-            sur tes dépenses d'abonnements annuelles (Netflix, Spotify, Disney+...)
+            {language === 'fr' 
+              ? "sur tes dépenses d'abonnements annuelles (Netflix, Spotify, Disney+...)"
+              : "on your annual subscription expenses (Netflix, Spotify, Disney+...)"}
           </p>
         </motion.aside>
       </div>
