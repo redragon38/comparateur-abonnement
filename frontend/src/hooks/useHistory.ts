@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 const HISTORY_KEY = 'subscription-history';
 const MAX_HISTORY_ITEMS = 10;
@@ -21,7 +21,7 @@ export const useHistory = () => {
     localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   }, [history]);
 
-  const addToHistory = (item: Omit<HistoryItem, 'timestamp'>) => {
+  const addToHistory = useCallback((item: Omit<HistoryItem, 'timestamp'>) => {
     setHistory(prev => {
       // Remove if already exists
       const filtered = prev.filter(h => h.id !== item.id);
@@ -35,15 +35,15 @@ export const useHistory = () => {
       // Keep only MAX_HISTORY_ITEMS
       return newHistory.slice(0, MAX_HISTORY_ITEMS);
     });
-  };
+  }, []);
 
-  const clearHistory = () => {
+  const clearHistory = useCallback(() => {
     setHistory([]);
-  };
+  }, []);
 
-  const removeFromHistory = (id: string) => {
+  const removeFromHistory = useCallback((id: string) => {
     setHistory(prev => prev.filter(h => h.id !== id));
-  };
+  }, []);
 
   return {
     history,
